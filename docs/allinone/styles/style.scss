@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'iconfont';
+
+
+/* colors */
+@each $color, $value in $theme-colors {
+    /* text color */
+    .text-#{$color} {
+        color: $value!important;
+    }
+    /* background */
+    .bg-#{$color} {
+        background-color: $value!important;
+    }
+}
+
+/* gray */
+@each $color, $value in $tone-gray {
+    /* text color */
+    .text-#{$color} {
+        color: $value!important;
+    }
+    /* background */
+    .bg-#{$color} {
+        background-color: $value!important;
+    }
+}
+
+@each $item in (center, right, left) {
+    .text-#{$item} {
+        text-align: $item;
+    }
+}
+
+@each $size in (24, 32, 48, 72, 96, 128) {
+    .icon-size-#{$size} {
+        max-height: $size#{px};
+        max-width: $size#{px};
+    }
+}
+
+@import 'layout';
+@import 'card';

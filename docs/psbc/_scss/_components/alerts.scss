@@ -1,0 +1,14 @@
+// alerts
+.alert {
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: $border-radius;
+}
+@each $color, $value in $theme-colors {
+    .alert-#{$color} {
+        background-color: rgba($color: $value, $alpha: 0.09);
+        border-color: rgba($color: $value, $alpha: 0.5);
+        color: $value;
+    }
+}

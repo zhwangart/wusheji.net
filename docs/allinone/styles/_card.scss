@@ -1,0 +1,28 @@
+/* card */
+.card {
+    position: relative;
+    border-radius: $border-radius;
+}
+.card-header {
+    padding: 1rem;
+    border-bottom: $border-width $border-color solid;
+}
+
+.card-color {
+    overflow: hidden;
+}
+.color-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.color-row .color-column {
+    flex: 1;
+    flex-grow: 1;
+    padding: 1rem;
+}
+.color-alpha-9 {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 1rem;
+    margin: 1rem -1rem -1rem;
+    color: $dark;
+}

@@ -1,0 +1,11 @@
+/** grid **/
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    margin: -1rem;
+}
+.columns .column {
+    flex: 1 1 auto;
+    padding: 1rem;
+}

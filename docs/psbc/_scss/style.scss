@@ -1,0 +1,71 @@
+@import 'variables';
+@import 'sidebar';
+@import 'grid';
+@import 'components';
+
+.text-uppercase { text-transform: uppercase!important;}
+
+/* colors */
+.text-primary   { color: $color-primary!important;}
+.text-darker    { color: $color-darker!important;}
+.text-light     { color: $color-light!important;}
+.text-white     { color: $color-white!important;}
+/* -- */
+.text-secondary { color: $color-secondary!important;}
+.text-success   { color: $color-success!important;}
+.text-danger    { color: $color-danger!important;}
+.text-warning   { color: $color-warning!important;}
+.text-info      { color: $color-info!important;}
+
+/* background */
+.bg-primary   { background-color: $color-primary!important;}
+.bg-darker    { background-color: $color-darker!important;}
+.bg-dark      { background-color: $color-dark!important;}
+.bg-light     { background-color: $color-light!important;}
+.bg-white     { background-color: $color-white!important;}
+/* -- */
+.bg-secondary { background-color: $color-secondary!important;}
+.bg-success   { background-color: $color-success!important;}
+.bg-danger    { background-color: $color-danger!important;}
+.bg-warning   { background-color: $color-warning!important;}
+.bg-info      { background-color: $color-info!important;}
+
+/* card */
+.card {
+    position: relative;
+    border-radius: .4rem;
+}
+.card-header {
+    padding: 1rem;
+    border-bottom: solid .025rem white;
+}
+
+.card-color {
+    overflow: hidden;
+}
+.color-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.color-row .color-column {
+    flex: 1;
+    flex-grow: 1;
+    padding: 1rem;
+}
+.color-alpha-9 {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 1rem;
+    margin: 1rem -1rem -1rem;
+    color: $color-darker;
+}
+
+/* margin */
+.m-1  { margin: 1rem!important;}
+.mt-1 { margin-top: 1rem!important;}
+.mr-1 { margin-right: 1rem!important;}
+.mb-1 { margin-bottom: 1rem!important;}
+.ml-1 { margin-left: 1rem!important;}
+/* padding */
+.p-1  { padding: 1rem;}
+.py-1 { padding-right: 1rem; padding-left: 1rem;}
+.px-1 { padding-top: 1rem; padding-bottom: 1rem;}

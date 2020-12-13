@@ -1,0 +1,16 @@
+/** components **/
+// border
+.border-color-dark {
+    border: solid 1px #d3d5d8;
+}
+.border-color-light {
+    border: solid 1px #f2f2f3;
+}
+.border-rounded {
+    border-radius: 5px;
+}
+
+@import "_components/buttons";
+@import "_components/form";
+@import "_components/alerts";
+

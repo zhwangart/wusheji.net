@@ -1,0 +1,57 @@
+/** variables **/
+
+// colors
+$orange:   #ff9900;
+$greeb:    #00cc66;
+$blue:     #0099ff;
+$red:      #ff1400;
+
+// gray
+$gray_1:     rgba(0,04,19, .7);
+$gray_2:     rgba(70,70,74, 1);
+$gray_3:     rgba(153,153,153, 1);
+$gray_4:     rgba(204,204,204, 1);
+$gray_5:     rgba(248,249,250, 1);
+
+$primary:    $orange;
+$secondary:  $gray_3;
+$info:       $blue;
+$warning:    $orange;
+$danger:     $red;
+$success:    $greeb;
+$light:      $gray_5;
+$dark:       $gray_1;
+
+$tone-gray: (
+  "gray-1":  $gray_1,
+  "gray-2":  $gray_2,
+  "gray-3":  $gray_3,
+  "gray-4":  $gray_4,
+  "gray-5":  $gray_5
+) !default;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "success":    $success,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+
+// body
+$body-color:    $dark;
+$body-bg:       $light;
+
+// border
+$border-radius: 5px;
+$border-width:  1px;
+$border-color:  rgba($gray_4,.7);
+
+// form
+$input-height:  35px;
+// checks
+$check-size:    16px;
+
