@@ -154,6 +154,21 @@
 /* sidebar */
 .sidebar {
   width: 220px; }
+  .sidebar li {
+    position: relative; }
+    .sidebar li.active {
+      background-color: transparent !important; }
+      .sidebar li.active::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -10px;
+        height: 20px;
+        width: 2px;
+        background-color: #0074d9; }
+      .sidebar li.active a {
+        color: #0074d9; }
 
 .content {
   left: 220px; }

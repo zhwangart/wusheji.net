@@ -2,6 +2,25 @@
 //
 .sidebar {
     width: 220px;
+    li {
+        position: relative;
+        &.active {
+            background-color: transparent!important;
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -10px;
+                height: 20px;
+                width: 2px;
+                background-color:  #0074d9;
+            }
+            a {
+                color: #0074d9;
+            }
+        }
+    }
 }
 .content {
     left: 220px;
