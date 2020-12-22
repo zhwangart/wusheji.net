@@ -4,7 +4,7 @@
 
 开发过程中，建议使用蓝湖中分层图的尺寸与样式。如看到蓝湖中图片尺寸默认显示为 1920 × 1080 的话，在右上方尺寸设定宽度为 3840 即可，我们的设计为 4K 尺寸。
 
-蓝湖：[https://lanhuapp.com/url/Hnrki-EMPyn](https://lanhuapp.com/url/Hnrki-hc9YN)，链接于2021年1月5日0点失效
+蓝湖：[https://lanhuapp.com/url/Hnrki-evLN2](https://lanhuapp.com/url/Hnrki-evLN2)，链接于2021年1月5日0点失效
 <br>
 Icons：[图标集获取](https://wusheji.net/source/allinone_svg_icons.zip)
 <br>
