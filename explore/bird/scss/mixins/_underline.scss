@@ -1,0 +1,44 @@
+
+$underline-width:  .1rem;
+
+@mixin underline {
+  position: relative;
+  padding-bottom: 1rem;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: $underline-width;
+    width: 50%;
+  }
+}
+
+@mixin underline-color($color) {
+  &::after {
+    background-color: $color;
+  }
+}
+
+@mixin underline-center($width) {
+  @include underline;
+  &::after {
+    @include center-x;
+    width: $width;
+  }
+}
+
+@mixin underline-right($width) {
+  @include underline;
+  &::after {
+    right: 0;
+    width: $width;
+  }
+}
+
+@mixin underline-left($width1) {
+  @include underline;
+  &::after {
+    left: 0;
+    width: $width1;
+  }
+}

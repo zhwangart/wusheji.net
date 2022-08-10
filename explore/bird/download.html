@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>稻壳阅读器</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header absolute-top border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.svg" height="36" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_top"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar_top">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./">首页</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./download.html#download">下载 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./docs.html">文档</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="jumbotron jumbotron-download position-relative">
+    <div class="container">
+      <div class="text-center">
+        <figure>
+          <img height="256" src="images/logo-vertical.svg" alt="">
+          <figcaption>
+            <small class="text-secondary">2019-03-11</small>
+          </figcaption>
+        </figure>
+        <ul class="list-unstyled text-secondary">
+          <li>极致、去繁、无广告，为深度学习而生</li>
+          <li>支持多种格式文档阅读，十亿文档满足所有工作学习需求</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <main class="main mb-5" id="download">
+    <div class="position-relative pb-5 mb-3">
+      <figure class="position-relative">
+        <img class="img-fluid mb-5"
+          src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgODAwIDEyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODAwIDEyODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSJ0cmFuc3BhcmVudCIgc3Ryb2tlPSIjZTFlZWZmIiBzdHJva2UtbWl0ZXJsaW1pdD0iOSIgZD0iTTgwMCwxMi43Yy0xMC45LDIuOC0yMC4zLDkuNS0yNi41LDE4LjVjLTQuNyw0LjctOC42LDEwLjMtMTEuMywxNi40Yy02LDAuNi0xMS43LDIuMy0xNi45LDQuNwoJYy0xOC43LDUuMy0zMy45LDE5LjEtNDAuOSwzN2MtNS45LTIuMi0xMi4zLTMuNC0xOC45LTMuNGMtMTMuNSwwLTI1LjksNC45LTM1LjQsMTNjLTUuOS0zLjItMTIuNy01LTE5LjktNQoJYy0xMS42LDAtMjIsNC43LTI5LjYsMTIuMmMtMS40LTAuMS0yLjktMC4yLTQuNC0wLjJjLTEzLjQsMC0yNS40LDUuNi0zMy45LDE0LjZjLTcuNC01LjgtMTYuNy05LjMtMjYuOC05LjMKCWMtOC4xLDAtMTUuNywyLjItMjIuMSw2LjFjLTEuNy0yMC42LTE4LjktMzYuOC0zOS45LTM2LjhjLTE0LjEsMC0yNi41LDcuMy0zMy42LDE4LjNjLTguNSw1LjYtMTQuNiwxNC42LTE2LjUsMjUuMQoJYy0yLjMsMC41LTQuNSwxLjItNi42LDJjLTUuOC0xMi42LTE4LjUtMjEuNC0zMy4zLTIxLjRjLTguOSwwLTE3LDMuMi0yMy40LDguNGMtMS43LTAuMy0zLjUtMC40LTUuMy0wLjRjLTguMiwwLTE1LjgsMi45LTIxLjcsNy43CgljLTMuMS0yNS40LTI0LjctNDUtNTAuOS00NWMtNywwLTEzLjYsMS40LTE5LjcsMy45Yy01LjktMjMtMjYuOC0zOS45LTUxLjYtMzkuOWMtMTguMSwwLTM0LjEsOS00My43LDIyLjhjLTEuNC0wLjEtMi44LTAuMi00LjMtMC4yCgljLTkuNiwwLTE4LjYsMi40LTI2LjUsNi42Yy02LjUtNi42LTE1LjYtMTAuNi0yNS41LTEwLjZjLTMuMywwLTYuNSwwLjUtOS41LDEuM2MtMC45LTAuMy0xLjgtMC42LTIuNy0wLjhjMC4xLTEuMiwwLjItMi41LDAuMi0zLjgKCWMwLTUuNy0xLjEtMTEuMS0zLjEtMTYuMUM5Mi42LDE3LjksNzQuOCwyLDUzLjMsMkMzOS4yLDIsMjYuNiw4LjksMTguOSwxOS41Yy00LjgtMi43LTEwLjMtNC4yLTE2LjItNC4yYy0wLjksMC0xLjgsMC0yLjcsMC4xIi8+Cjwvc3ZnPg==">
+      </figure>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-6 col-lg-4">
+            <div class="card border-0 text-center">
+              <div class="card-body">
+                <i class="iconfont icon-s-4 text-primary">&#xe6a1;</i>
+                <h5 class="card-title my-3">Windows</h5>
+                <ul class="list-inline text-secondary">
+                  <li class="list-inline-item">大小：3M</li>
+                  <li class="list-inline-item">版本：2.03.40</li>
+                </ul>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">中文版</a></li>
+                  <li class="list-inline-item"><span class="text-muted">|</span></li>
+                  <li class="list-inline-item"><a href="#">English</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card border-0 text-center">
+              <div class="card-body">
+                <i class="iconfont icon-s-4 text-secondary">&#xe6a2;</i>
+                <h5 class="card-title my-3">Mac OS</h5>
+                <ul class="list-inline text-secondary">
+                  <li class="list-inline-item">大小：8.8M</li>
+                  <li class="list-inline-item">版本：1.10</li>
+                </ul>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">中文版</a></li>
+                  <li class="list-inline-item"><span class="text-muted">|</span></li>
+                  <li class="list-inline-item"><a href="#">English</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card border-0 text-center">
+              <div class="card-body">
+                <i class="iconfont icon-s-4 text-success">&#xe6a0;</i>
+                <h5 class="card-title my-3">Android HD</h5>
+                <ul class="list-inline text-secondary">
+                  <li class="list-inline-item">大小：46.8M </li>
+                  <li class="list-inline-item">版本：1.0</li>
+                </ul>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">中文版</a></li>
+                  <li class="list-inline-item"><span class="text-muted">|</span></li>
+                  <li class="list-inline-item"><a href="#">English</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="position-relative py-5">
+      <div class="container">
+        <h3 class="underline-center underline-primary text-center my-5">高效功能</h3>
+        <div class="row justify-content-md-center pt-5">
+          <div class="col-lg-4">
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-layer text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">复制与打印</h5>
+                <p class="text-secondary">无需下载，直接在线对文档进行复制与打印</p>
+              </div>
+            </div>
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-subtract text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">多任务窗口切换</h5>
+                <p class="text-secondary">文档阅读自由切换，给你高效的多线程阅读体验</p>
+              </div>
+            </div>
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-laptop text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">极简阅读无广告</h5>
+                <p class="text-secondary">文档阅读自由切换，给你高效的多线程阅读体验</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-auto"></div>
+          <div class="col-lg-4">
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-layout text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">阅读模式多样化</h5>
+                <p class="text-secondary">无需下载，直接在线对文档进行复制与打印</p>
+              </div>
+            </div>
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-moon text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">阅读背景人性化</h5>
+                <p class="text-secondary">文档阅读自由切换，给你高效的多线程阅读体验</p>
+              </div>
+            </div>
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-commenting text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">客户服务专业化</h5>
+                <p class="text-secondary">文档阅读自由切换，给你高效的多线程阅读体验</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="position-relative bg-cyan-linear pb-5">
+    <figure class="position-relative">
+      <img class="img-fluid"
+        src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgODAwIDEzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODAwIDEzMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTAsMHYxNi40YzAuOS0wLjEsMS44LTAuMSwyLjctMC4xYzUuOSwwLDExLjQsMS41LDE2LjIsNC4yQzI2LjYsOS45LDM5LjIsMyw1My4zLDNjMjEuNSwwLDM5LjMsMTUuOSw0Mi4yLDM2LjUKCWMyLDUsMy4xLDEwLjQsMy4xLDE2LjFjMCwxLjMtMC4xLDIuNS0wLjIsMy44YzAuOSwwLjIsMS44LDAuNSwyLjcsMC44YzMtMC44LDYuMi0xLjMsOS41LTEuM2MxMCwwLDE5LDQuMSwyNS41LDEwLjYKCWM3LjktNC4yLDE2LjktNi42LDI2LjUtNi42YzEuNCwwLDIuOCwwLjEsNC4zLDAuMmM5LjYtMTMuOCwyNS42LTIyLjgsNDMuNy0yMi44YzI0LjgsMCw0NS43LDE3LDUxLjYsMzkuOQoJYzYuMS0yLjUsMTIuNy0zLjksMTkuNy0zLjljMjYuMiwwLDQ3LjgsMTkuNiw1MC45LDQ1YzUuOS00LjgsMTMuNS03LjcsMjEuNy03LjdjMS44LDAsMy42LDAuMSw1LjMsMC40YzYuMy01LjIsMTQuNS04LjQsMjMuNC04LjQKCWMxNC44LDAsMjcuNSw4LjgsMzMuMywyMS40YzIuMS0wLjksNC4zLTEuNiw2LjYtMmMxLjgtMTAuNSw4LTE5LjQsMTYuNS0yNS4xYzcuMS0xMSwxOS41LTE4LjMsMzMuNi0xOC4zYzIxLDAsMzguMiwxNi4yLDM5LjksMzYuOAoJYzYuNS0zLjksMTQuMS02LjEsMjIuMS02LjFjMTAuMSwwLDE5LjQsMy41LDI2LjgsOS4zYzguNS05LDIwLjUtMTQuNiwzMy45LTE0LjZjMS41LDAsMi45LDAuMSw0LjQsMC4yQzYwOCw5OS43LDYxOC40LDk1LDYzMCw5NQoJYzcuMiwwLDE0LDEuOCwxOS45LDVjOS41LTguMSwyMS45LTEzLDM1LjQtMTNjNi43LDAsMTMsMS4yLDE4LjksMy40YzctMTcuOSwyMi4yLTMxLjgsNDAuOS0zN2M1LjMtMi40LDExLTQsMTYuOS00LjcKCWMyLjgtNi4yLDYuNi0xMS43LDExLjMtMTYuNGM2LjItOSwxNS42LTE1LjcsMjYuNS0xOC41VjBIMHoiLz4KPC9zdmc+">
+    </figure>
+    <div class="container">
+      <div class="text-center text-white pb-5">
+        <img height="128" src="images/bird.svg" style="transform: translateY(-180%)">
+        <h3>稻壳阅读器</h3>
+        <h2 class="my-4">即刻开启轻松阅读之旅</h2>
+        <p class="mb-5">新注册用户可以获得 3 天免费会员版体验资格</p>
+        <p class="my-4"><button class="btn btn-light btn-lg my-sm-0 px-5" type="submit">马上免费体验</button></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-light pt-5 pb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h4>稻壳阅读器</h4>
+          <p>稻壳阅读器支持在线文档搜索与阅读，汇集数万本公开版权世界文学优秀书籍，免费下载阅读。</p>
+        </div>
+        <div class="col-2">
+          <h5>产品</h5>
+          <ul class="list-unstyled">
+            <li>帮助中心</li>
+            <li>协议条款</li>
+            <li>联系我们</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5>联系方式</h5>
+          <ul class="list-unstyled">
+            <li>用户服务（产品咨询/需求反馈/意见与建议）</li>
+            <li>邮箱：bm@daokeyuedu.com</li>
+          </ul>
+          <ul class="list-unstyled">
+            <li>商务合作</li>
+            <li>邮箱：bm@daokeyuedu.com</li>
+          </ul>
+        </div>
+        <div class="col-2 text-center">
+          <img class="img-fluid" src="images/QR-code.jpg" alt="">
+          <p class="mt-1">关注稻壳阅读器公众号</p>
+        </div>
+      </div>
+      <hr>
+      <ul class="list-inline text-center">
+        <li class="list-inline-item">稻壳阅读器网站 版权所有</li>
+        <li class="list-inline-item">&copy;2008-2019</li>
+        <li class="list-inline-item">网站备案：京ICP备15049383号</li>
+        <li class="list-inline-item">联系电话：010-52400516</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script/jquery-3.2.1.slim.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/holder.min.js"></script>
+</body>
+
+</html>

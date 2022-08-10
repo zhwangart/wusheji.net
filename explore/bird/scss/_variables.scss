@@ -1,0 +1,82 @@
+// Bootstrap Colors
+//
+// stylelint-disable
+$white:         #fff !default;
+$gray-100:      #f8f9fa !default;
+$gray-200:      #e9ecef !default;
+$gray-300:      #dee2e6 !default;
+$gray-400:      #ced4da !default;
+$gray-500:      #adb5bd !default;
+$gray-600:      #868e96 !default;
+$gray-700:      #495057 !default;
+$gray-800:      #343a40 !default;
+$gray-900:      #212529 !default;
+$black:         #000 !default;
+//
+// Brand Colors
+$blue:          #007bff !default;
+$indigo:        #6610f2 !default;
+$purple:        #6f42c1 !default;
+$pink:          #e83e8c !default;
+$red:           #dc3545 !default;
+$orange:        #fd7e14 !default;
+$yellow:        #ffc107 !default;
+$green:         #28a745 !default;
+$teal:          #20c997 !default;
+$cyan:          #17a2b8 !default;
+//
+// Theme Colors
+$theme-colors: (
+        primary:         $blue,
+        secondary:       $gray-600,
+        success:         $green,
+        info:            $cyan,
+        warning:         $yellow,
+        danger:          $red,
+        light:           $gray-100,
+        dark:            $gray-800
+);
+
+
+
+// -------------------------------------------- //
+
+// colors
+$color-standard:              #007bff;
+$color-standard-light:        #6bb7fc;
+$color-standard-lighter:      #e1eeff;
+
+$color-auxiliary:             #dea531;
+$color-auxiliary-light:       #f4d734;
+
+
+// apple product
+//
+// macbook air
+$color-macbook:        $white;
+$color-macbook-darken: darken($color-macbook, 5%);
+
+//
+// browser
+$color-browser-light:  $white;
+$color-browser-btns: (
+        close:         #eb6b60,
+        minimize:      #f4be4f,
+        maximize:      #66c655
+);
+
+$browser-btns-size:    9px;
+$browser-font-size:    87.5%;
+
+// Icon Size
+$icon-size: (
+        1:       1rem,
+        2:       2rem,
+        3:       3rem,
+        4:       4rem,
+        5:       5rem,
+        6:       6rem,
+        7:       7rem,
+        8:       8rem,
+        9:       9rem
+);

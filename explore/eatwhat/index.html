@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <title>吃什么？</title>
+</head>
+
+<body>
+  <div class="container">
+    <figure>
+      <img src="eat.svg" width="64px" alt="">
+    </figure>
+    <h1>今天中午吃<span class="food" id="what">什么</span>？</h1>
+    <p>解决上班族世纪难题，吃什么不用愁！</p>
+    <input class="btn" type="button" value="开始" id="start">
+  </div>
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+  var MOFUN = window.MOFUN || {};
+  MOFUN.random = function (max, min) {
+    max = max || 100;
+    min = min || 0;
+    return Math.ceil(Math.random() * (max - min) + min);
+  }
+  MOFUN.remove = function (ele) {
+    ele && ele.parentNode.removeChild(ele);
+  };
+  $(function () {
+    var running = 0,
+      what = $("#what"),
+      btn = $("#start"),
+      book = [
+        ["早上",
+          "面包 蛋糕 茶叶蛋 油条 馄饨 小笼包 包子 豆浆 牛奶 煎饼 鸡蛋羹 鸡蛋灌饼 手抓饼 食堂"
+        ],
+        ["中午",
+          "刀削面 万达烩面 新开的 十七元自助 饺子 酸汤水饺 麻辣烫 酸辣粉 食堂 晋福庄"
+        ],
+        ["晚上",
+          "打卤面 手抓饼 煎饼 小笼包 烩面 食堂"
+        ]
+      ],
+      list = book[1][1];
+    times = 0,
+      timer = 0;
+    btn.val("开始").removeAttr("disabled").click(function () {
+      var l = list.replace(/ +/g, " ").replace(/^ | $/g, "").split(" ");
+      if (l.length == 1 && l[0] != "") return alert("就一个有什么好选的？");
+      if (l.length == 1) return alert("啥也没有，吃土吗？");
+      if (!running) {
+        times++;
+        if (times == 3) {
+          btn.val("继续");
+          return false;
+        }
+        $(this).val("停止");
+        timer = setInterval(function () {
+          var r = MOFUN.random(l.length),
+            food = l[r - 1],
+            rTop = MOFUN.random($(document).height()),
+            rLeft = MOFUN.random($(document).width() - 50),
+            rSize = MOFUN.random(32, 12);
+          what.html(food);
+          $("<span class='temp'>" + food + "</span>").css({
+            "display": "none",
+            "top": rTop,
+            "left": rLeft,
+            "color": "rgba(0,0,0,." + Math.random() + ")",
+            "fontSize": rSize + "px"
+          }).appendTo("body").fadeIn("slow", function () {
+            $(this).fadeOut("slow", function () {
+              $(this).remove();
+            });
+          });
+        }, 60);
+        running = 1;
+        $("#shareto").fadeOut(function () {
+          $(this).remove()
+        });
+      } else {
+        btn.val("不行，换一个");
+        clearInterval(timer);
+        running = 0;
+      };
+    });
+    document.onkeydown = function (e) {
+      e = e || window.event;
+      if (e.keyCode == 32) $("#start").trigger("click");
+    };
+  });
+</script>
+</body>
+
+</html>

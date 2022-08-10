@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>稻壳阅读器</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header absolute-top border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.svg" height="36" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_top"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar_top">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./">首页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./download.html#download">下载</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./docs.html">文档</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="jumbotron position-relative">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <article class="mb-5 text-center text-lg-left">
+            <h4 class="text-secondary">稻壳阅读器</h4>
+            <h2 class="my-4 font-weight-normal">十亿文档 轻松阅读</h2>
+            <p class="text-secondary">稻壳阅读器是一款内置海量文档资源的极速阅读器<br>它界面简洁、办公高效，让你阅读更加专注</p>
+            <p class="my-4"><button class="btn btn-primary px-4" type="submit"><i class="iconfont">&#xe6a1;</i> 下载
+                Window 版</button></p>
+            <p><a class="text-secondary" href="./download.html#download">更多系统下载</a></p>
+          </article>
+        </div>
+        <div class="col-lg-7">
+          <div class="macbook">
+            <div class="macbook-screen">
+              <img class="img-fluid" src="images/ui/ui-bg-1.png">
+              <div style="position: absolute; bottom: 0; padding: 2rem 2rem 1rem;">
+                <div class="browser rounded text-secondary">
+                  <div class="browser-header bg-light rounded-top">
+                    <ul class="browser-header-btns mb-0">
+                      <li class="browser-btn rounded-circle browser-btn-close"></li>
+                      <li class="browser-btn rounded-circle browser-btn-minimize"></li>
+                      <li class="browser-btn rounded-circle browser-btn-maximize"></li>
+                    </ul>
+                    <ul class="browser-header-tabs mb-0 font-weight-light">
+                      <li class="browser-tabs"><i class="iconfont text-primary">&#xe7cc;</i></li>
+                      <li class="browser-tabs active">稻壳阅读器...</li>
+                    </ul>
+                  </div>
+                  <div class="browser-toolbar bg-light border-top">
+                    <ul class="browser-toolbar-tools mb-0">
+                      <li class="browser-tool"><i class="fe fe-folder-open"></i></li>
+                      <li class="browser-tool"><i class="fe fe-download"></i></li>
+                      <li class="browser-tool"><i class="fe fe-print"></i></li>
+                      <li class="browser-tool"><i class="fe fe-elipsis-h"></i></li>
+                    </ul>
+                    <div class="browser-toolbar-search border rounded mx-5 px-2"></div>
+                    <ul class="browser-toolbar-tools mb-0">
+                      <li class="browser-tool"><i class="fe fe-user"></i></li>
+                    </ul>
+                  </div>
+                  <div class="browser-body">
+                    <article>
+                      <div class="media">
+                        <img class="mr-3" height="32" src="images/bird.svg" alt="">
+                        <div class="media-body">
+                          <h5 class="font-weight-light">稻壳阅读器使用说明</h5>
+                          <hr>
+                          <p class="font-weight-light">
+                            稻壳阅读器支持在线文档搜索与阅读，汇集数万本公开版权世界文学优秀书籍，免费下载阅读。它界面简洁、办公高效，让你阅读更加专注。<br> 稻壳阅读器使您能够方便快捷对文档进行批注与做笔记。
+                            <br> 文档阅读自由切换给您高效的多线程阅读体验。
+                            <br> ...
+                          </p>
+                        </div>
+                      </div>
+
+
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="macbook-keyboard"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main my-5">
+    <div class="position-relative pb-5 mb-3">
+      <figure class="position-relative">
+        <img class="img-fluid mb-5"
+          src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgODAwIDEyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODAwIDEyODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSJ0cmFuc3BhcmVudCIgc3Ryb2tlPSIjZTFlZWZmIiBzdHJva2UtbWl0ZXJsaW1pdD0iOSIgZD0iTTgwMCwxMi43Yy0xMC45LDIuOC0yMC4zLDkuNS0yNi41LDE4LjVjLTQuNyw0LjctOC42LDEwLjMtMTEuMywxNi40Yy02LDAuNi0xMS43LDIuMy0xNi45LDQuNwoJYy0xOC43LDUuMy0zMy45LDE5LjEtNDAuOSwzN2MtNS45LTIuMi0xMi4zLTMuNC0xOC45LTMuNGMtMTMuNSwwLTI1LjksNC45LTM1LjQsMTNjLTUuOS0zLjItMTIuNy01LTE5LjktNQoJYy0xMS42LDAtMjIsNC43LTI5LjYsMTIuMmMtMS40LTAuMS0yLjktMC4yLTQuNC0wLjJjLTEzLjQsMC0yNS40LDUuNi0zMy45LDE0LjZjLTcuNC01LjgtMTYuNy05LjMtMjYuOC05LjMKCWMtOC4xLDAtMTUuNywyLjItMjIuMSw2LjFjLTEuNy0yMC42LTE4LjktMzYuOC0zOS45LTM2LjhjLTE0LjEsMC0yNi41LDcuMy0zMy42LDE4LjNjLTguNSw1LjYtMTQuNiwxNC42LTE2LjUsMjUuMQoJYy0yLjMsMC41LTQuNSwxLjItNi42LDJjLTUuOC0xMi42LTE4LjUtMjEuNC0zMy4zLTIxLjRjLTguOSwwLTE3LDMuMi0yMy40LDguNGMtMS43LTAuMy0zLjUtMC40LTUuMy0wLjRjLTguMiwwLTE1LjgsMi45LTIxLjcsNy43CgljLTMuMS0yNS40LTI0LjctNDUtNTAuOS00NWMtNywwLTEzLjYsMS40LTE5LjcsMy45Yy01LjktMjMtMjYuOC0zOS45LTUxLjYtMzkuOWMtMTguMSwwLTM0LjEsOS00My43LDIyLjhjLTEuNC0wLjEtMi44LTAuMi00LjMtMC4yCgljLTkuNiwwLTE4LjYsMi40LTI2LjUsNi42Yy02LjUtNi42LTE1LjYtMTAuNi0yNS41LTEwLjZjLTMuMywwLTYuNSwwLjUtOS41LDEuM2MtMC45LTAuMy0xLjgtMC42LTIuNy0wLjhjMC4xLTEuMiwwLjItMi41LDAuMi0zLjgKCWMwLTUuNy0xLjEtMTEuMS0zLjEtMTYuMUM5Mi42LDE3LjksNzQuOCwyLDUzLjMsMkMzOS4yLDIsMjYuNiw4LjksMTguOSwxOS41Yy00LjgtMi43LTEwLjMtNC4yLTE2LjItNC4yYy0wLjksMC0xLjgsMC0yLjcsMC4xIi8+Cjwvc3ZnPg==">
+        <img class="paper-plane"
+          src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iIzAwN0JGRiIgZD0iTTk1OC42LDEwMS42Yy0xLjUtMS4yLTMuNi0xLjQtNS4zLTAuNWwtNDc5LjEsMjQ1Yy0xLjgsMC45LTIuOCwyLjgtMi43LDQuOGMwLjIsMiwxLjUsMy43LDMuNCw0LjNsMTYwLjMsNTEKCWMxLjcsMC41LDMuNSwwLjEsNC44LTFMODYyLDIwNS4yTDY4NC45LDQxNC45Yy0xLjEsMS4zLTEuNCwzLTEsNC42YzAuNSwxLjYsMS43LDIuOCwzLjMsMy4zbDE3OCw1NC4yYzAuNCwwLjIsMC45LDAuMiwxLjQsMC4yCgljMC45LDAsMS43LTAuMiwyLjUtMC43YzEuMi0wLjcsMi0xLjgsMi4zLTMuMWw4OC45LTM2Ni44Qzk2MC44LDEwNC44LDk2MC4xLDEwMi44LDk1OC42LDEwMS42TDk1OC42LDEwMS42eiBNNzM5LjMsNDYxLjcKCWwtNDkuMi0xNS4yYy0xLjUtMC41LTMuMS0wLjItNC40LDAuOGMtMS4zLDAuOS0yLDIuNC0yLDR2OTIuOGMwLDIuMiwxLjUsNC4xLDMuNSw0LjdjMC40LDAuMSwwLjksMC4yLDEuNCwwLjIKCWMxLjYsMCwzLjMtMC44LDQuMS0yLjNsNDkuMi03Ny43YzAuOC0xLjMsMS0yLjksMC40LTQuNEM3NDEuOSw0NjMuMyw3NDAuOCw0NjIuMSw3MzkuMyw0NjEuN0w3MzkuMyw0NjEuN3oiLz4KPHBhdGggZmlsbD0iIzZCQjdGQyIgZD0iTTY4Ni45LDU3MS41Yy0xLjQsMi43LTIuNyw1LjItNC4yLDcuN2MtMS40LDIuNi0yLjksNS00LjMsNy41Yy0xLjQsMi41LTMsNC45LTQuNSw3LjQKCQljLTEuNSwyLjUtMy4xLDQuOS00LjcsNy4zYy0zLjEsNC45LTYuNCw5LjYtOS43LDE0LjRjLTEuNiwyLjQtMy4zLDQuNy01LDdsLTUuMSw3Yy0xMy44LDE4LjUtMjguOSwzNi00NSw1Mi40bC0zLDMuMUw2MDAsNjg3CgkJbC0xLjYsMS41bC02LjIsNmwtNi4yLDZjLTAuNSwwLjUtMSwxLTEuNiwxLjVsLTEuNiwxLjRsLTMuMiwyLjlsLTYuNSw1LjdsLTMuMiwyLjljLTEuMSwxLTIuMSwxLjktMy4zLDIuOGwtMTMuNCwxMC45bC0zLjQsMi43CgkJYy0xLjEsMC45LTIuMywxLjctMy41LDIuNmwtNyw1LjFjLTQuNywzLjQtOS4yLDYuOS0xNC4xLDEwYy05LjYsNi40LTE5LjUsMTIuNC0yOS45LDE3LjZjLTEwLjQsNS4yLTIxLjEsOS43LTMyLjIsMTMuMQoJCWMtMTEuMSwzLjUtMjIuNiw1LjktMzQuMiw2LjljLTUuOCwwLjQtMTEuNywwLjYtMTcuNiwwLjFsLTIuMi0wLjJsLTEuMS0wLjFsLTEuMS0wLjFsLTQuNC0wLjZjLTEuNS0wLjItMi45LTAuNS00LjMtMC44CgkJYy0xLjQtMC4zLTIuOS0wLjYtNC4zLTFjLTEuNC0wLjQtMi45LTAuOC00LjMtMS4ybC00LjItMS40Yy0xLjQtMC40LTIuNy0xLjEtNC4xLTEuN2wtMi0wLjljLTAuNy0wLjMtMS4zLTAuNy0yLTFsLTItMQoJCWMtMC43LTAuMy0xLjMtMC43LTEuOS0xLjFsLTMuOC0yLjRsLTMuNi0yLjdjLTEuMi0wLjktMi4zLTEuOS0zLjQtMi45Yy00LjQtNC04LjItOC43LTExLjItMTMuOWMtMy01LjItNS4yLTEwLjktNi4zLTE2LjcKCQljLTEuMS01LjktMS40LTExLjktMC43LTE3LjhjMC43LTUuOSwyLjQtMTEuOCw1LTE3LjFjNS4yLTEwLjgsMTMuOC0xOS43LDI0LjItMjUuNWMxMC4zLTUuOCwyMi41LTguNSwzNC4zLTcuMQoJCWM1LjksMC43LDExLjcsMi41LDE3LDUuMWM1LjMsMi42LDEwLjEsNi4zLDE0LjMsMTAuM2M0LjIsNC4xLDgsOC44LDEwLjgsMTMuOWMyLjksNS4yLDQuOSwxMC44LDYsMTYuNmMxLjEsNS44LDEuMiwxMS44LDAuNCwxNy42CgkJYy0wLjcsNS44LTIuMiwxMS41LTQuMiwxN2MtMS4xLDIuNy0yLjEsNS40LTMuNSw4Yy0xLjIsMi43LTIuNyw1LjItNC4xLDcuN2MtMC43LDEuMy0xLjUsMi41LTIuMywzLjdjLTAuOCwxLjItMS41LDIuNS0yLjQsMy42CgkJbC0yLjUsMy41Yy0wLjQsMC42LTAuOCwxLjItMS4zLDEuOGwtMS4zLDEuN2MtNy4xLDkuMS0xNS4xLDE3LjQtMjMuNywyNS4yYy04LjUsNy43LTE3LjUsMTQuOS0yNi45LDIxLjZjLTkuNCw2LjYtMTksMTMtMjguOCwxOC45CgkJbC0xLjgsMS4xbC0xLjksMS4xbC0zLjgsMi4xbC03LjUsNC4yYy0yLjYsMS4zLTUuMiwyLjUtNy43LDMuOGwtMy45LDEuOWMtMS4zLDAuNi0yLjYsMS4zLTMuOSwxLjhjLTIxLDkuMy00My4yLDE1LjktNjUuOSwxOS41CgkJYy0yMi43LDMuNS00NS44LDQuMy02OC42LDIuM2MtMi45LTAuMi01LjctMC40LTguNi0wLjhjLTIuOC0wLjMtNS43LTAuNy04LjUtMWwtOC41LTEuM2MtMS40LTAuMi0yLjgtMC41LTQuMi0wLjdsLTQuMi0wLjgKCQljLTExLjMtMi4yLTIyLjQtNC45LTMzLjQtOC4xYy0xMS0zLjMtMjEuOC03LTMyLjQtMTEuM2MtMTAuNi00LjMtMjEtOS4xLTMxLTE0LjdjMTAsNS42LDIwLjUsMTAuMiwzMS4xLDE0LjUKCQljMTAuNiw0LjIsMjEuNSw3LjksMzIuNSwxMS4xYzExLDMuMiwyMi4xLDUuOCwzMy40LDcuOGw0LjIsMC44YzEuNCwwLjMsMi44LDAuNSw0LjIsMC43bDguNSwxLjJjMi44LDAuNCw1LjcsMC42LDguNSwxCgkJYzIuOCwwLjQsNS43LDAuNSw4LjUsMC43YzIyLjgsMS44LDQ1LjgsMC44LDY4LjMtMi44YzIyLjUtMy44LDQ0LjUtMTAuNSw2NS4zLTE5LjljMS4zLTAuNSwyLjYtMS4yLDMuOS0xLjhsMy44LTEuOQoJCWMyLjUtMS4zLDUuMS0yLjUsNy42LTMuOGw3LjQtNC4ybDMuNy0yLjFsMS45LTEuMWwxLjgtMS4xYzkuNy01LjksMTkuMi0xMi4zLDI4LjUtMTljOS4yLTYuNywxOC4xLTEzLjksMjYuNS0yMS42CgkJYzguNC03LjcsMTYuMi0xNiwyMy4yLTI1bDEuMy0xLjdjMC40LTAuNiwwLjgtMS4yLDEuMi0xLjdsMi40LTMuNWMwLjgtMS4xLDEuNS0yLjQsMi4zLTMuNmMwLjctMS4yLDEuNS0yLjQsMi4yLTMuNgoJCWMxLjQtMi41LDIuOC00LjksMy45LTcuNWMxLjMtMi41LDIuMy01LjIsMy4zLTcuOGMxLjktNS4zLDMuMy0xMC43LDMuOS0xNi4zYzAuNy01LjUsMC41LTExLjEtMC41LTE2LjZjLTEtNS40LTMtMTAuNy01LjctMTUuNQoJCWMtMi43LTQuOC02LjItOS4yLTEwLjMtMTNjLTQtMy44LTguNS03LjEtMTMuNS05LjZjLTQuOS0yLjQtMTAuMy00LTE1LjctNC42Yy0xMC45LTEuMy0yMi4yLDEuNC0zMS44LDYuOAoJCWMtOS42LDUuNS0xNy41LDEzLjgtMjIuMiwyMy43Yy00LjcsOS45LTUuOSwyMS4zLTMuNywzMi4xYzIuMiwxMC44LDgsMjAuNiwxNi4yLDI3LjljMS4xLDAuOSwyLDEuOCwzLjEsMi42bDMuMywyLjRsMy41LDIuMgoJCWMwLjYsMC40LDEuMiwwLjcsMS44LDFsMS44LDAuOWMwLjYsMC4zLDEuMiwwLjYsMS44LDAuOWwxLjksMC44YzEuMywwLjUsMi41LDEuMSwzLjksMS41bDMuOSwxLjNsNCwxLjFjMS4zLDAuNCwyLjcsMC42LDQuMSwwLjkKCQljMS40LDAuMiwyLjcsMC42LDQuMSwwLjdsNC4xLDAuNWwxLDAuMWwxLDAuMWwyLjEsMC4xYzUuNiwwLjQsMTEuMiwwLjIsMTYuOC0wLjJjMTEuMi0xLDIyLjItMy40LDMyLjktNi45CgkJYzEwLjctMy40LDIxLjEtNy45LDMxLjItMTNjMTAuMS01LjEsMTkuOC0xMSwyOS4xLTE3LjRjNC43LTMuMSw5LjItNi42LDEzLjgtMTBsNi44LTUuMWMxLjEtMC45LDIuMy0xLjcsMy40LTIuNmwzLjMtMi43CgkJbDEzLjItMTAuOGMxLjEtMC45LDIuMi0xLjksMy4yLTIuOGwzLjItMi44bDYuMy01LjdsMy4yLTIuOGwxLjYtMS40YzAuNS0wLjUsMS0xLDEuNS0xLjVsNi4xLTZsNi4xLTZsMS41LTEuNWwxLjUtMS41bDIuOS0zLjEKCQljMTUuOC0xNi40LDMwLjUtMzMuOCw0NC01Mi4xbDUtNi45YzEuNy0yLjMsMy4zLTQuNiw0LjktN2MzLjItNC43LDYuNC05LjQsOS40LTE0LjJjMS41LTIuNCwzLjEtNC44LDQuNS03LjIKCQljMS41LTIuNCwzLTQuOCw0LjQtNy4zYzEuNC0yLjUsMi45LTQuOSw0LjItNy40YzEuNC0yLjUsMi43LTUsMy45LTcuNGwwLTAuMWMxLTIsMy40LTIuOCw1LjQtMS44UzY4Ny45LDU2OS41LDY4Ni45LDU3MS41CgkJTDY4Ni45LDU3MS41eiIvPgo8L3N2Zz4=">
+      </figure>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card border-0 text-center">
+              <div class="card-body">
+                <i class="iconfont icon-s-3 text-primary">&#xe7c8;</i>
+                <h5 class="card-title my-3 text-muted">云端储存</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card border-0 text-center">
+              <div class="card-body">
+                <i class="iconfont icon-s-3 text-primary">&#xe698;</i>
+                <h5 class="card-title my-3 text-muted">海量文档</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card border-0 text-center">
+              <div class="card-body">
+                <i class="iconfont icon-s-3 text-primary">&#xe7ca;</i>
+                <h5 class="card-title my-3 text-muted">专属格式</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card border-0 text-center">
+              <div class="card-body">
+                <i class="iconfont icon-s-3 text-primary">&#xe7c9;</i>
+                <h5 class="card-title my-3 text-muted">批注笔记</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <img class="img-fluid mb-5 mb-lg-0" src="images/ui/notes.gif">
+          </div>
+          <div class="col-lg-4">
+            <article class="pl-3">
+              <h3 class="underline-left underline-primary mb-4">做标记，更简单</h3>
+              <p class="mb-5 text-secondary">稻壳阅读器使您能够方便快捷对<br>文档进行批注与做笔记</p>
+              <div class="row">
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI0UxRUVGRiIgZD0iTTY2OC4xLDgzMS43SDE2NC4yYy01NSwwLTEwMC00NS0xMDAtMTAwVjM1NmMwLTU1LDQ1LTEwMCwxMDAtMTAwaDUwMy45YzU1LDAsMTAwLDQ1LDEwMCwxMDB2Mzc1LjgKCUM3NjguMSw3ODYuNyw3MjMuMSw4MzEuNyw2NjguMSw4MzEuN3oiLz4KPHBhdGggZmlsbD0iIzZCQjdGQyIgZD0iTTE2My4yLDQ0NC4yaDUwNS45di0yOC41SDE2My4yVjQ0NC4yeiBNMTYzLjIsNTU4LjFoNDYxLjl2LTI4LjVIMTYzLjJWNTU4LjF6IE0xNjMuMiw2NzEuOWgyMTkuOXYtMjguNUgxNjMuMgoJVjY3MS45eiIvPgo8cGF0aCBmaWxsPSIjMDA3QkZGIiBkPSJNNjAzLjEsMzQ2LjhjLTguOCwxNS41LTMuNiwzNS4yLDExLjUsNDQuMWMxNS4xLDguOSwzNC41LDMuNiw0My4xLTExLjhsMTE1LjktMjA1LjYKCWM4LjgtMTUuNSwzLjYtMzUuNC0xMS41LTQ0LjNjLTE1LjEtOC45LTM0LjUtMy42LTQzLjEsMTEuOEw2MDMuMSwzNDYuOHogTTkyMS4xLDE0OC41Yy0zMi44LTE5LjctNzcuOC0xMS4xLTk1LjEsMTguNkw3MTAuMSwzNzIuNwoJbDEyNy43LDc1LjVsMTE1LjktMjA1LjZDOTcwLjUsMjEzLjEsOTUzLjksMTY4LjQsOTIxLjEsMTQ4LjV6IE01MzEuMSw2OTAuNWMtMTIuMiwyMS4zLTM5LjUsMTIwLjEtMjUuMywxNjEuOGwtMTIuNywyMgoJYy00LjMsNy42LTEuNCwxNy41LDYuNiwyMi4zYzEuNywxLDMuNiwxLjcsNS41LDIuMmM2LjYsMS4zLDEzLjUtMS40LDE2LjgtNy4zbDEzLjQtMjMuM2M0Mi05LjgsMTA4LjktNzYuNCwxMjMuNC0xMDJMODE3LDQ4NS43CglsLTEyNy44LTc1LjVMNTMxLjEsNjkwLjV6Ii8+Cjwvc3ZnPg==">
+                    <h5 class="mb-0 font-weight-normal">笔记</h5>
+                  </div>
+                  <p class="text-secondary">轻松编辑，随时记录你的想法</p>
+
+                </div>
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI0UxRUVGRiIgZD0iTTg1OS4zLDgzMS43SDE2NC4yYy01NSwwLTEwMC00NS0xMDAtMTAwVjI5MS44YzAtNTUsNDUtMTAwLDEwMC0xMDBoNjk1LjFjNTUsMCwxMDAsNDUsMTAwLDEwMHY0MzkuOQoJQzk1OS4zLDc4Ni43LDkxNC4zLDgzMS43LDg1OS4zLDgzMS43eiIvPgo8cGF0aCBmaWxsPSIjMDA3QkZGIiBkPSJNODMyLjgsODMySDY5MS42bC01NC45LTE0NC43SDM4MS4yTDMyOC45LDgzMkgxOTEuMkw0NDAuNSwxOTJoMTM2TDgzMi44LDgzMnogTTU5NS43LDU3OS4xbC04OC0yMzhsLTg3LjIsMjM4CglINTk1Ljd6Ii8+Cjwvc3ZnPg==">
+                    <h5 class="mb-0 font-weight-normal">高亮</h5>
+                  </div>
+                  <p class="text-secondary">醒目标注文本信息，即时找到</p>
+                </div>
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iIzAwN0JGRiIgZD0iTTgzMi44LDczOC4xSDY5MS42bC01NC45LTE0NC43SDM4MS4ybC01Mi4zLDE0NC43SDE5MS4yTDQ0MC41LDk4LjJoMTM2TDgzMi44LDczOC4xeiBNNTk1LjcsNDg1LjJsLTg4LTIzOAoJbC04Ny4yLDIzOEg1OTUuN3oiLz4KPHBhdGggZmlsbD0iI0UxRUVGRiIgZD0iTTY0LjQsOTI4LjJoODk1LjF2LTk2LjVINjQuNFY5MjguMnoiLz4KPC9zdmc+">
+                    <h5 class="mb-0 font-weight-normal">下划线</h5>
+                  </div>
+                  <p class="text-secondary">更加强调文本内容，引起注意</p>
+                </div>
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI0UxRUVGRiIgZD0iTTY2Ny44LDgzMS43SDE2My45Yy01NSwwLTEwMC00NS0xMDAtMTAwVjM1NmMwLTU1LDQ1LTEwMCwxMDAtMTAwaDUwMy45YzU1LDAsMTAwLDQ1LDEwMCwxMDB2Mzc1LjgKCUM3NjcuOCw3ODYuNyw3MjIuOCw4MzEuNyw2NjcuOCw4MzEuN3oiLz4KPHBhdGggZmlsbD0iIzAwN0JGRiIgZD0iTTYwMi44LDM0Ni44Yy04LjgsMTUuNS0zLjYsMzUuMiwxMS41LDQ0LjFzMzQuNSwzLjYsNDMuMS0xMS44bDExNS45LTIwNS42YzguOC0xNS41LDMuNi0zNS40LTExLjUtNDQuMwoJcy0zNC41LTMuNi00My4xLDExLjhMNjAyLjgsMzQ2Ljh6IE05MjAuOCwxNDguNWMtMzIuOC0xOS43LTc3LjgtMTEuMS05NS4xLDE4LjZMNzA5LjgsMzcyLjdsMTI3LjcsNzUuNWwxMTUuOS0yMDUuNgoJQzk3MC4yLDIxMy4xLDk1My42LDE2OC40LDkyMC44LDE0OC41eiBNNTMwLjgsNjkwLjVjLTEyLjIsMjEuMy0zOS41LDEyMC4xLTI1LjMsMTYxLjhsLTEyLjcsMjJjLTQuMyw3LjYtMS40LDE3LjUsNi42LDIyLjMKCWMxLjcsMSwzLjYsMS43LDUuNSwyLjJjNi42LDEuMywxMy41LTEuNCwxNi44LTcuM2wxMy40LTIzLjNjNDItOS44LDEwOC45LTc2LjQsMTIzLjQtMTAybDE1OC4yLTI4MC41bC0xMjcuOC03NS41TDUzMC44LDY5MC41eiIvPgo8cGF0aCBmaWxsPSIjNkJCN0ZDIiBkPSJNMjcwLjQsMzYzLjdjLTI2LjksMC01MC44LDExLjgtNzAuMywyOC44Yy0xOS41LDE3LTM1LjQsMzkuNC00OC42LDYzLjRjLTI2LjYsNDgtNDIuOCwxMDIuOC01MCwxMzcuMgoJYzAsMC4xLDAsMC4zLTAuMSwwLjRjLTMuMiwxNy4zLTkuMyw2MC40LTUuNCwxMDJjMS45LDIwLjgsNi4yLDQxLjMsMTYuNSw1OC41YzEwLjMsMTcuMiwyOS40LDMwLjcsNTIuNywzMC43CgljNDAsMCw2Ny4yLTE4LjEsODUuNy0zMy4xYzkuMi03LjUsMTYuOC0xNC4zLDIyLjUtMThjMi41LTEuNiwzLjYtMS4xLDUuMy0xLjhjMSw3LDEuNiwxNywyLjcsMjhjMS4yLDExLjcsMi42LDIzLjksNy43LDM1LjYKCWMyLjUsNS44LDYuMSwxMS44LDExLjksMTYuNWM1LjgsNC44LDEzLjksNy44LDIyLDcuOWMxMC4zLDAuMSwxNy44LTQuNiwyMy42LTljNS44LTQuNCwxMC42LTkuMywxNS0xMy42YzQuNC00LjQsOC41LTguMiwxMS40LTEwLjUKCWMzLTIuMiw0LjMtMiwyLjgtMmMwLjMsMCwwLjItMC4xLDAuNC0wLjFjMC43LDEuOCwyLjMsOC40LDQuNywxNy44YzUuMSwxOS43LDE4LjYsNDkuMiw1OC41LDY5LjVjOC42LDQuNCwxOS4yLDEsMjMuNi03LjcKCWM0LjQtOC42LDEtMTkuMi03LjctMjMuNmMtMzEuNy0xNi4yLTM2LjQtMzEuMy00MC41LTQ3Yy0yLTcuOC0yLjctMTUuOS03LjUtMjUuNmMtNC44LTkuNi0xOC40LTE4LjUtMzEuNi0xOC41CgljLTEwLjIsMC0xNy44LDQuNS0yMy43LDguOWMtNS45LDQuNC0xMC44LDkuMy0xNS4yLDEzLjdjLTMuNiwzLjctNy40LDcuMi0xMS40LDEwLjVjLTEuMiwwLjktMS45LDEuMi0yLjQsMS41CgljLTAuMy0wLjMtMC44LTAuOC0xLjctMi44Yy0yLjEtNC45LTMuOS0xNC42LTQuOS0yNS4yYy0xLjEtMTAuNS0xLjUtMjEuNy0zLjItMzEuOWMtMC44LTUuMS0xLjgtOS45LTQuNC0xNS4zCgljLTIuNi01LjQtOS4xLTEzLTE4LjYtMTQuM2MtMTMuOC0xLjgtMjYuMywzLjEtMzUuOCw5LjJjLTkuNSw2LjEtMTcuNCwxMy41LTI1LjcsMjAuM2MtMTYuNiwxMy42LTMzLjQsMjUuMy02My41LDI1LjMKCWMtMTEuOCwwLTE2LjgtMy45LTIyLjctMTMuN2MtNS45LTkuOC0xMC0yNS45LTExLjctNDMuN2MtMy4zLTM1LjcsMi4zLTc3LjcsNS05Mi4yVjYwMGM2LjYtMzEuMywyMi40LTgzLjksNDYuMy0xMjcKCWMxMi0yMS43LDI2LTQwLjksNDEtNTRjMTUtMTMuMSwzMC4zLTIwLjEsNDcuMi0yMC4xYzIwLjUsMCwzMC43LDguMiwzOS41LDIzLjljOC43LDE1LjcsMTMuMiwzOS41LDEzLjIsNjMuOAoJYzAsOS43LDcuOCwxNy41LDE3LjUsMTcuNmM5LjcsMCwxNy41LTcuOCwxNy42LTE3LjVjMCwwLDAsMCwwLDBjMC0yOC4zLTQuMy01Ny4xLTE3LjUtODAuOUMzMjcuMywzODEuOSwzMDIuNSwzNjMuNywyNzAuNCwzNjMuN3oiLz4KPC9zdmc+">
+                    <h5 class="mb-0 font-weight-normal">画笔</h5>
+                  </div>
+                  <p class="text-secondary">画笔直接在文档做笔记，并且可以保存</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <hr style="margin: 6rem 0;">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <article class="pr-3">
+              <h3 class="underline-left underline-primary mb-4">读文档，更高效</h3>
+              <p class="mb-5 text-secondary">文档阅读自由切换<br>给您高效的多线程阅读体验</p>
+              <div class="row">
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI0UxRUVGRiIgZD0iTTUwNi4xLDg5NS45SDEzNC4yYy0zOC41LDAtNzAtMzEuNS03MC03MFY2NDZjMC0zOC41LDMxLjUtNzAsNzAtNzBoMzcxLjljMzguNSwwLDcwLDMxLjUsNzAsNzB2MTc5LjkKCUM1NzYuMSw4NjQuNCw1NDQuNiw4OTUuOSw1MDYuMSw4OTUuOXoiLz4KPHBhdGggZmlsbD0iI0UxRUVGRiIgZD0iTTg4OS40LDQ0OC4xSDUxNS41Yy0zOC41LDAtNzAtMzEuNS03MC03MFYxOTguMmMwLTM4LjUsMzEuNS03MCw3MC03MGgzNzMuOWMzOC41LDAsNzAsMzEuNSw3MCw3MHYxNzkuOQoJQzk1OS40LDQxNi42LDkyNy45LDQ0OC4xLDg4OS40LDQ0OC4xeiIvPgo8cGF0aCBmaWxsPSIjMDA3QkZGIiBkPSJNNzI5LjksNzA0LjJIMjk0LjFjLTM4LjUsMC03MC0zMS41LTcwLTcwVjM5MGMwLTM4LjUsMzEuNS03MCw3MC03MGg0MzUuN2MzOC41LDAsNzAsMzEuNSw3MCw3MHYyNDQuMgoJQzc5OS45LDY3Mi43LDc2OC40LDcwNC4yLDcyOS45LDcwNC4yeiIvPgo8L3N2Zz4=">
+                    <h5 class="mb-0 font-weight-normal">多标签</h5>
+                  </div>
+                  <p class="text-secondary">支持多标签页面阅读，更加高效工作、学习</p>
+                </div>
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI0UxRUVGRiIgZD0iTTY2OC4xLDc2NS4xSDE2NC4yYy01NSwwLTEwMC00NS0xMDAtMTAwVjI4OS40YzAtNTUsNDUtMTAwLDEwMC0xMDBoNTAzLjljNTUsMCwxMDAsNDUsMTAwLDEwMHYzNzUuNwoJQzc2OC4xLDcyMC4xLDcyMy4xLDc2NS4xLDY2OC4xLDc2NS4xeiIvPgo8cmVjdCBmaWxsPSIjNkJCN0ZDIiB4PSIxNjIuNyIgeT0iMzMwLjkiIHdpZHRoPSI0OTUuNSIgaGVpZ2h0PSIyOC41Ii8+CjxyZWN0IGZpbGw9IiM2QkI3RkMiIHg9IjE2Mi43IiB5PSI0NDQuNyIgd2lkdGg9IjI1My4xIiBoZWlnaHQ9IjI4LjUiLz4KPHJlY3QgZmlsbD0iIzZCQjdGQyIgeD0iMTYyLjciIHk9IjU1OC42IiB3aWR0aD0iMjUzLjEiIGhlaWdodD0iMjguNSIvPgo8cGF0aCBmaWxsPSIjMDA3QkZGIiBkPSJNODYwLjQsODMxLjdoLTI3OGMtNTUsMC0xMDAtNDUtMTAwLTEwMFY1NDguMmMwLTU1LDQ1LTEwMCwxMDAtMTAwaDI3OGM1NSwwLDEwMCw0NSwxMDAsMTAwdjE4My41CglDOTYwLjQsNzg2LjcsOTE1LjQsODMxLjcsODYwLjQsODMxLjd6Ii8+Cjwvc3ZnPg==">
+                    <h5 class="mb-0 font-weight-normal">多窗口</h5>
+                  </div>
+                  <p class="text-secondary">支持多窗口分隔为单窗口面阅读，更加专注</p>
+                </div>
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI0UxRUVGRiIgZD0iTTg5MC42LDY0MC4xSDEzMy40Yy0zOC41LDAtNzAtMzEuNS03MC03MFYxOTguM2MwLTM4LjUsMzEuNS03MCw3MC03MGg3NTcuMmMzOC41LDAsNzAsMzEuNSw3MCw3MHYzNzEuOAoJCUM5NjAuNiw2MDguNiw5MjkuMSw2NDAuMSw4OTAuNiw2NDAuMXoiLz4KCTxwYXRoIGZpbGw9IiMwMDdCRkYiIGQ9Ik01NzMuMyw0MzhjLTI4LjIsMC01MS4yLDI2LTUxLjIsNTcuOXYtNjcuNmMwLTMxLjktMjMtNTcuOS01MS4yLTU3LjljLTI4LjIsMC01MS4yLDI2LTUxLjIsNTcuOXYtNDEuMgoJCWMwLTMxLjktMjMtNTcuOS01MS4yLTU3LjljLTI4LjIsMC01MS4yLDI2LTUxLjIsNTcuOVYxODYuM2MwLTMxLjktMjMtNTcuOS01MS4yLTU3LjljLTI4LjIsMC01MS4yLDI2LTUxLjIsNTcuOXY0MTQuMUwxNTQuNyw1MzIKCQljLTIwLjYtMjMuNC01NC40LTIzLjQtNzUsMGMtMjAuNiwyMy40LTIwLjYsNjEuNiwwLDg1TDI0Nyw4MDYuNGMzOC45LDU0LjQsOTguNyw4OS4zLDE2NS40LDg5LjNjMTEzLjgsMCwyMDYuOS0xMDEsMjEyLjItMjI3LjgKCQloMC4zVjQ5NS43QzYyNC41LDQ2NC4yLDYwMS41LDQzOCw1NzMuMyw0MzhMNTczLjMsNDM4eiIvPgo8L3N2Zz4=">
+                    <h5 class="mb-0 font-weight-normal">窗口拖拽</h5>
+                  </div>
+                  <p class="text-secondary">精简主义的浏览器风格，满足各种拖拽、展示需求</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-8">
+            <img class="img-fluid mt-5 mt-lg-0" src="images/ui/window-merge.gif">
+          </div>
+        </div>
+
+        <hr style="margin: 6rem 0;">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <img class="img-fluid mt-5 mt-lg-0" src="images/ui/search-docs.gif">
+          </div>
+          <div class="col-lg-4">
+            <article class="pl-3">
+              <h3 class="underline-left underline-primary mb-4">海量资源，搜索直达</h3>
+              <p class="mb-5 text-secondary">汇聚十亿多文档，发现精彩世界<br>它不止于阅读，是更懂您更轻快的搜索阅读！</p>
+              <div class="row">
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRTFFRUZGO30KCS5zdDF7ZmlsbDojNkJCN0ZDO30KCS5zdDJ7ZmlsbDojMDA3QkZGO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODU5LjEsNzk5LjlIMTY0Yy01NSwwLTEwMC00NS0xMDAtMTAwVjI2MGMwLTU1LDQ1LTEwMCwxMDAtMTAwaDY5NS4xYzU1LDAsMTAwLDQ1LDEwMCwxMDB2NDM5LjkKCQlDOTU5LjEsNzU0LjksOTE0LjEsNzk5LjksODU5LjEsNzk5Ljl6Ii8+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNzQ1LjcsNjQ1LjRjLTEwLTEyLjItMjguMS0xNC0zOS45LTQuMWMtMTIuMiwxMC0xNCwyNy42LTQuMSw0MC4ybDIwNC4xLDIzNi4zYzEwLDEyLjIsMjcuNiwxNCwzOS45LDQuMQoJCQljMTIuMi0xMCwxNC0yNy42LDQuMS0zOS45TDc0NS43LDY0NS40eiIvPgoJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik02MzIsODg0LjZjLTEwLjMsMC0xOS45LTUuNS0yNS4xLTE0LjhsLTk5LjMtMTc2LjRsLTIwMS41LTE4LjFjLTExLjEtMS4xLTIwLjMtOC4xLTI0LjQtMTguNQoJCQljLTQuMS0xMC40LTEuOC0yMS44LDUuNS0yOS45bDEzNy0xNDkuMWwtNDUuMS0xOTcuNWMtMi42LTEwLjcsMS41LTIxLjgsMTAtMjguOHMyMC4zLTguNSwzMC4zLTMuN2wxODQuMiw4NC41bDE3My45LTEwMy43CgkJCWM5LjItNS41LDIxLTUuNSwzMC4zLDAuN2M5LjIsNS45LDE0LjQsMTYuNiwxMi45LDI3LjNsLTIzLjIsMjAwLjhsMTUyLjgsMTMzLjZjOC41LDcuNCwxMS44LDE5LjIsOC41LDI5LjlzLTEyLjYsMTguOC0yMy42LDIwLjMKCQkJTDgzNC42LDY1NWMtMTUuNSwxLjgtMjkuOS04LjktMzIuMS0yNC40Yy0yLjItMTUuNSw4LjUtMjkuOSwyNC0zMi41bDM4LjQtNC44TDc0OC4zLDQ5MS4xYy03LTYuMy0xMC43LTE1LjUtOS42LTI1LjFsMTguNS0xNTguNAoJCQlsLTEzNyw4MS42Yy04LjEsNC44LTE4LjEsNS41LTI2LjYsMS41bC0xNDUuMS02Ni41TDQ4NCw0NzkuNmMyLjIsOS4yLTAuNCwxOC44LTcsMjUuOUwzNjkuMiw2MjIuOWwxNTguNywxNC40CgkJCWM5LjIsMC43LDE3LjcsNi4zLDIyLjUsMTQuNGw3OC4zLDEzOC44bDE3LjctNDAuNmM2LjMtMTQuOCwyMy4yLTIxLjQsMzcuNy0xNS4xYzE0LjgsNi4zLDIxLjQsMjMuMiwxNS4xLDM3LjdsLTQwLjYsOTQuMQoJCQlDNjU0LjIsODc3LjUsNjQzLjksODg0LjYsNjMyLDg4NC42TDYzMiw4ODQuNnoiLz4KCTwvZz4KPC9nPgo8L3N2Zz4=">
+                    <h5 class="mb-0 font-weight-normal">畅享精品</h5>
+                  </div>
+                  <p class="text-secondary">信息覆盖全面，一站式满足工作学习需求</p>
+                </div>
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojNkJCN0ZDO30KCS5zdDF7ZmlsbDojMDA3QkZGO30KCS5zdDJ7ZmlsbDojRTFFRUZGO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTI2LjMsMzU0LjNjMCw3NC41LTYwLjIsMTMxLjktMTMxLjksMTMxLjlINjY4LjJjLTc0LjUsMC0xMzEuOS02MC4yLTEzMS45LTEzMS45VjIyOC4yCgkJYzAtNzQuNSw2MC4yLTEzMS45LDEzMS45LTEzMS45aDEyNi4yYzc0LjUsMCwxMzEuOSw2MC4yLDEzMS45LDEzMS45VjM1NC4zeiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTQ4Ny42LDc5NS44YzAsNzQuNS02MC4yLDEzMS45LTEzMS45LDEzMS45SDIyOS41Yy03MS43LDAtMTMxLjktNjAuMi0xMzEuOS0xMzEuOVY2NjkuNwoJCWMwLTc0LjUsNjAuMi0xMzEuOSwxMzEuOS0xMzEuOWgxMjYuMmM3NC41LDAsMTMxLjksNjAuMiwxMzEuOSwxMzEuOUw0ODcuNiw3OTUuOEw0ODcuNiw3OTUuOHoiLz4KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik03OTQuNCw1MzcuOEg2NzEuMWMtMTA5LDUuNy0xODkuMi03NC41LTE4My41LTE4My41VjIzMWMwLTc0LjUtNjAuMi0xMzQuOC0xMzEuOS0xMzQuOEgyMjkuNQoJCWMtNzEuNywwLTEzMS45LDYwLjItMTMxLjksMTMxLjl2MTI2LjJjMCw3NC41LDYwLjIsMTMxLjksMTMxLjksMTMxLjloMTIzLjNjMTA5LTUuNywxODkuMiw3NC41LDE4My41LDE4My41Vjc5MwoJCWMwLDc0LjUsNjAuMiwxMzEuOSwxMzEuOSwxMzEuOWgxMjYuMmM3NC41LDAsMTMxLjktNjAuMiwxMzEuOS0xMzEuOVY2NjkuN0M5MjkuMSw1OTUuMSw4NjguOSw1MzcuOCw3OTQuNCw1MzcuOEw3OTQuNCw1MzcuOHoiLz4KPC9nPgo8L3N2Zz4=">
+                    <h5 class="mb-0 font-weight-normal">顺畅阅览</h5>
+                  </div>
+                  <p class="text-secondary">打破阅读器界限，网上阅读不必畏手畏脚</p>
+                </div>
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzg1NkJGO30KCS5zdDF7ZmlsbDojMDA5MkZGO30KCS5zdDJ7ZmlsbDojNkJCN0ZDO30KCS5zdDN7ZmlsbDojRTFFRUZGO30KCS5zdDR7ZmlsbDojMDA3QkZGO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTS01MzIuNy03MzdjLTEyNiwwLTIzMC44LDkxLjktMjUyLjEsMjEzYy0yLjItMC40LTQuNC0wLjYtNi41LTAuNnYwYy04MS40LDAtMTQ3LjQsNjYuNS0xNDcuNCwxNDguNAoJYzAsODIsNjYsMTUxLDE0Ny40LDE1MWgyMjcuNWM5LjUsMC4yLDE5LjgsMC4yLDMxLDBjMTQxLjQsMCwyNTYtMTEwLjYsMjU2LTI1My40Uy0zOTEuMy03MzctNTMyLjctNzM3eiIvPgo8cGF0aCBjbGFzcz0ic3QxIiBkPSJNLTgwMC4zLTk0Ni4xYy0xNzcuOCwwLTMyNS40LDEzMS0zNTQuMSwzMDIuOWMtMC41LDAtMSwwLTEuNSwwYy0xMTUsMC0yMDguMyw5Mi44LTIwOC4zLDIwNy4zCgljMCwxMTQuNSw5My4zLDIxMC45LDIwOC4zLDIxMC45aDMyMy4yYzAsMCwwLDAsMCwwYzEwLjEsMC4xLDIwLjksMCwzMi40LTAuMmMxOTguNCwwLDM1OS4yLTE1NS44LDM1OS4yLTM1Ni44CglTLTYwMS45LTk0Ni4xLTgwMC4zLTk0Ni4xeiIvPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik03MDIuOCw1MDIuN2MtOTYuNiwwLTE3Ni45LDcwLjUtMTkzLjMsMTYzLjNjLTEuNy0wLjMtMy40LTAuNS01LTAuNXYwYy02Mi40LDAtMTEzLDUxLTExMywxMTMuOAoJCWMwLDYyLjksNTAuNiwxMTUuOCwxMTMsMTE1LjhINjc5YzcuMywwLjIsMTUuMiwwLjIsMjMuOCwwYzEwOC40LDAsMTk2LjMtODQuOCwxOTYuMy0xOTQuM0M4OTkuMSw1OTEuNCw4MTEuMiw1MDIuNyw3MDIuOCw1MDIuN3oiLz4KCTxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik00OTcuNywzNDIuM2MtMTM2LjMsMC0yNDkuNSwxMDAuNC0yNzEuNSwyMzIuM2MtMC40LDAtMC43LDAtMS4xLDBjLTg4LjIsMC0xNTkuNyw3MS4yLTE1OS43LDE1OQoJCWMwLDg3LjgsNzEuNSwxNjEuNywxNTkuNywxNjEuN2gyNDcuOGMwLDAsMCwwLDAsMGM3LjgsMC4xLDE2LDAsMjQuOC0wLjFjMTUyLjEsMCwyNzUuNC0xMTkuNCwyNzUuNC0yNzMuNlM2NDkuNywzNDIuMyw0OTcuNywzNDIuMwoJCXoiLz4KPC9nPgo8cGF0aCBjbGFzcz0ic3Q0IiBkPSJNOTU4LjUsMTI5LjFjLTEuNS0xLjItMy42LTEuNC01LjMtMC41TDQ3NC44LDM3My4yYy0xLjgsMC45LTIuOCwyLjgtMi43LDQuOHMxLjUsMy43LDMuNCw0LjNsMTYwLjEsNTAuOQoJYzEuNywwLjUsMy41LDAuMSw0LjgtMUw4NjIsMjMyLjVMNjg1LjEsNDQxLjljLTEuMSwxLjMtMS40LDMtMSw0LjZjMC41LDEuNiwxLjcsMi44LDMuMywzLjNsMTc3LjcsNTQuMWMwLjQsMC4yLDAuOSwwLjIsMS40LDAuMgoJYzAuOSwwLDEuNy0wLjIsMi40LTAuN2MxLjItMC43LDItMS44LDIuMy0zLjFsODguOC0zNjYuMkM5NjAuNywxMzIuMiw5NjAsMTMwLjMsOTU4LjUsMTI5LjFMOTU4LjUsMTI5LjF6IE03MzkuNSw0ODguN2wtNDkuMS0xNS4xCgljLTEuNS0wLjUtMy4xLTAuMi00LjQsMC44Yy0xLjMsMC45LTIsMi40LTIsNFY1NzFjMCwyLjIsMS41LDQuMSwzLjUsNC43YzAuNCwwLjEsMC45LDAuMiwxLjQsMC4yYzEuNiwwLDMuMy0wLjgsNC4xLTIuM2w0OS4xLTc3LjYKCWMwLjgtMS4zLDEtMi45LDAuNC00LjRDNzQyLjEsNDkwLjMsNzQxLDQ4OS4xLDczOS41LDQ4OC43TDczOS41LDQ4OC43eiIvPgo8L3N2Zz4=">
+                    <h5 class="mb-0 font-weight-normal">智能高效</h5>
+                  </div>
+                  <p class="text-secondary">搜索关键词自动关联，想看的一搜即读</p>
+                </div>
+                <div class="col-6">
+                  <div class="project-title mb-3">
+                    <img class="project-title-icon mr-2"
+                      src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzg1NkJGO30KCS5zdDF7ZmlsbDojMDA5MkZGO30KCS5zdDJ7ZmlsbDojRTFFRUZGO30KCS5zdDN7ZmlsbDojMDA3QkZGO30KCS5zdDR7ZmlsbDojNkJCN0ZDO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTS01MzIuNy03MzdjLTEyNiwwLTIzMC44LDkxLjktMjUyLjEsMjEzYy0yLjItMC40LTQuNC0wLjYtNi41LTAuNnYwYy04MS40LDAtMTQ3LjQsNjYuNS0xNDcuNCwxNDguNAoJYzAsODIsNjYsMTUxLDE0Ny40LDE1MWgyMjcuNWM5LjUsMC4yLDE5LjgsMC4yLDMxLDBjMTQxLjQsMCwyNTYtMTEwLjYsMjU2LTI1My40Uy0zOTEuMy03MzctNTMyLjctNzM3eiIvPgo8cGF0aCBjbGFzcz0ic3QxIiBkPSJNLTgwMC4zLTk0Ni4xYy0xNzcuOCwwLTMyNS40LDEzMS0zNTQuMSwzMDIuOWMtMC41LDAtMSwwLTEuNSwwYy0xMTUsMC0yMDguMyw5Mi44LTIwOC4zLDIwNy4zCgljMCwxMTQuNSw5My4zLDIxMC45LDIwOC4zLDIxMC45aDMyMy4yYzAsMCwwLDAsMCwwYzEwLjEsMC4xLDIwLjksMCwzMi40LTAuMmMxOTguNCwwLDM1OS4yLTE1NS44LDM1OS4yLTM1Ni44CglTLTYwMS45LTk0Ni4xLTgwMC4zLTk0Ni4xeiIvPgo8cGF0aCBjbGFzcz0ic3QyIiBkPSJNODkwLjYsNzAzLjlIMTMzLjRjLTM4LjUsMC03MC0zMS41LTcwLTcwVjI2Mi4xYzAtMzguNSwzMS41LTcwLDcwLTcwaDc1Ny4yYzM4LjUsMCw3MCwzMS41LDcwLDcwdjM3MS44CglDOTYwLjYsNjcyLjQsOTI5LjEsNzAzLjksODkwLjYsNzAzLjl6Ii8+CjxnPgoJPHBhdGggY2xhc3M9InN0MyIgZD0iTTYzNC43LDQ2MWMwLTE0OC4zLTEyMC42LTI2OC45LTI2OC45LTI2OC45Uzk2LjMsMzEyLjEsOTYuMyw0NjFjMCwxMzcuNiwxMDMuNywyNTAuNywyMzYuMiwyNjdsMC42LDE5OS4yCgkJYzAsMTguMiwxNS4xLDMyLjcsMzIuNywzMi43YzE4LjIsMCwzMi43LTE1LjEsMzIuNy0zMi43bC0wLjYtMTk4LjVDNTMxLjEsNzExLjcsNjM0LjcsNTk4LDYzNC43LDQ2MUw2MzQuNyw0NjF6IE0zNjUuMiw2NzIuMQoJCWMtMTE2LjIsMC0yMTEuMS05NC45LTIxMS4xLTIxMS4xUzI0OSwyNDkuOSwzNjUuMiwyNDkuOVM1NzYuMywzNDQuOCw1NzYuMyw0NjFTNDgyLjEsNjcyLjEsMzY1LjIsNjcyLjFMMzY1LjIsNjcyLjF6Ii8+Cgk8cGF0aCBjbGFzcz0ic3Q0IiBkPSJNMzUxLjksMzQwLjVsLTgyLjIsMTQ2LjNoODAuNmwtNTEuMSwxMjMuNmwxNjIuMS0xODAuN2gtOTYuOGw2MC44LTg5LjJIMzUxLjl6Ii8+CjwvZz4KPC9zdmc+">
+                    <h5 class="mb-0 font-weight-normal">极速搜索</h5>
+                  </div>
+                  <p class="text-secondary">网页搜索体验，毫秒响应瞬间呈现</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative bg-light py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <i class="iconfont icon-s-3 text-primary">&#xe7cb;</i>
+              <h5 class="card-title my-3 text-secondary">“搜”的一下 海量文档</h5>
+              <p class="text-secondary font-weight-light">拥有10亿文档资源给你足够的信息量与安全感</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <i class="iconfont icon-s-3 text-primary">&#xe6bf;</i>
+              <h5 class="card-title my-3 text-secondary">极速打开 “阅”享品质</h5>
+              <p class="text-secondary font-weight-light">无论何种文档格式你都能享受畅快自由的阅读体验</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <i class="iconfont icon-s-3 text-primary">&#xe7c8;</i>
+              <h5 class="card-title my-3 text-secondary">云端存储 轻松管理</h5>
+              <p class="text-secondary font-weight-light">文档安全存储，云端轻松管理文档快速阅读</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <i class="iconfont icon-s-3 text-primary">&#xe7ca;</i>
+              <h5 class="card-title my-3 text-secondary">安全轻量 专属格式</h5>
+              <p class="text-secondary font-weight-light">专属XDF格式，安装包仅5M左右是你最轻量安全与贴心的伴侣</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative py-5">
+      <div class="container">
+        <h3 class="underline-center underline-primary text-center my-5">更多高效功能</h3>
+        <div class="row justify-content-md-center pt-5">
+          <div class="col-lg-4">
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-layer text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">复制与打印</h5>
+                <p class="text-secondary">无需下载，直接在线对文档进行复制与打印</p>
+              </div>
+            </div>
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-subtract text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">多任务窗口切换</h5>
+                <p class="text-secondary">文档阅读自由切换，给你高效的多线程阅读体验</p>
+              </div>
+            </div>
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-laptop text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">极简阅读无广告</h5>
+                <p class="text-secondary">软件设计简洁无广告，让您拥有舒适的阅读体验</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-auto"></div>
+          <div class="col-lg-4">
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-layout text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">阅读模式多样化</h5>
+                <p class="text-secondary">支持单双页、全屏、幻灯片模式阅读，满足不同阅读与演示需求</p>
+              </div>
+            </div>
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-moon text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">阅读背景人性化</h5>
+                <p class="text-secondary">可设置不同颜色阅读背景，夜间护眼模式给您舒适阅读体验</p>
+              </div>
+            </div>
+            <div class="media py-3">
+              <div class="icon-plate icon-plate-3 rounded bg-light mr-3"><i
+                  class="icon icon-s-2 fe fe-commenting text-secondary"></i></div>
+              <div class="media-body">
+                <h5 class="font-weight-normal">客户服务专业化</h5>
+                <p class="text-secondary">多端用户反馈、稻壳阅读器微信专业客服提供在线支持</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="position-relative bg-cyan-linear pb-5">
+    <figure class="position-relative">
+      <img class="img-fluid"
+        src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgODAwIDEzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODAwIDEzMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTAsMHYxNi40YzAuOS0wLjEsMS44LTAuMSwyLjctMC4xYzUuOSwwLDExLjQsMS41LDE2LjIsNC4yQzI2LjYsOS45LDM5LjIsMyw1My4zLDNjMjEuNSwwLDM5LjMsMTUuOSw0Mi4yLDM2LjUKCWMyLDUsMy4xLDEwLjQsMy4xLDE2LjFjMCwxLjMtMC4xLDIuNS0wLjIsMy44YzAuOSwwLjIsMS44LDAuNSwyLjcsMC44YzMtMC44LDYuMi0xLjMsOS41LTEuM2MxMCwwLDE5LDQuMSwyNS41LDEwLjYKCWM3LjktNC4yLDE2LjktNi42LDI2LjUtNi42YzEuNCwwLDIuOCwwLjEsNC4zLDAuMmM5LjYtMTMuOCwyNS42LTIyLjgsNDMuNy0yMi44YzI0LjgsMCw0NS43LDE3LDUxLjYsMzkuOQoJYzYuMS0yLjUsMTIuNy0zLjksMTkuNy0zLjljMjYuMiwwLDQ3LjgsMTkuNiw1MC45LDQ1YzUuOS00LjgsMTMuNS03LjcsMjEuNy03LjdjMS44LDAsMy42LDAuMSw1LjMsMC40YzYuMy01LjIsMTQuNS04LjQsMjMuNC04LjQKCWMxNC44LDAsMjcuNSw4LjgsMzMuMywyMS40YzIuMS0wLjksNC4zLTEuNiw2LjYtMmMxLjgtMTAuNSw4LTE5LjQsMTYuNS0yNS4xYzcuMS0xMSwxOS41LTE4LjMsMzMuNi0xOC4zYzIxLDAsMzguMiwxNi4yLDM5LjksMzYuOAoJYzYuNS0zLjksMTQuMS02LjEsMjIuMS02LjFjMTAuMSwwLDE5LjQsMy41LDI2LjgsOS4zYzguNS05LDIwLjUtMTQuNiwzMy45LTE0LjZjMS41LDAsMi45LDAuMSw0LjQsMC4yQzYwOCw5OS43LDYxOC40LDk1LDYzMCw5NQoJYzcuMiwwLDE0LDEuOCwxOS45LDVjOS41LTguMSwyMS45LTEzLDM1LjQtMTNjNi43LDAsMTMsMS4yLDE4LjksMy40YzctMTcuOSwyMi4yLTMxLjgsNDAuOS0zN2M1LjMtMi40LDExLTQsMTYuOS00LjcKCWMyLjgtNi4yLDYuNi0xMS43LDExLjMtMTYuNGM2LjItOSwxNS42LTE1LjcsMjYuNS0xOC41VjBIMHoiLz4KPC9zdmc+">
+    </figure>
+    <div class="container">
+      <div class="text-center text-white pb-5">
+        <img height="128" src="images/bird.svg" style="transform: translateY(-180%)">
+        <h3>稻壳阅读器</h3>
+        <h2 class="my-4">即刻开启轻松阅读之旅</h2>
+        <p class="mb-5">新注册用户可以获得 3 天免费会员版体验资格</p>
+        <p class="my-4"><button class="btn btn-light btn-lg my-sm-0 px-5" type="submit">马上免费体验</button></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-light pt-5 pb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h4>稻壳阅读器</h4>
+          <p>稻壳阅读器支持在线文档搜索与阅读，汇集数万本公开版权世界文学优秀书籍，免费下载阅读。</p>
+        </div>
+        <div class="col-2">
+          <h5>产品</h5>
+          <ul class="list-unstyled">
+            <li>帮助中心</li>
+            <li>协议条款</li>
+            <li>联系我们</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5>联系方式</h5>
+          <ul class="list-unstyled">
+            <li>用户服务（产品咨询/需求反馈/意见与建议）</li>
+            <li>邮箱：bm@daokeyuedu.com</li>
+          </ul>
+          <ul class="list-unstyled">
+            <li>商务合作</li>
+            <li>邮箱：bm@daokeyuedu.com</li>
+          </ul>
+        </div>
+        <div class="col-2 text-center">
+          <img class="img-fluid" src="images/QR-code.jpg" alt="">
+          <p class="mt-1">关注稻壳阅读器公众号</p>
+        </div>
+      </div>
+      <hr>
+      <ul class="list-inline text-center">
+        <li class="list-inline-item">稻壳阅读器网站 版权所有</li>
+        <li class="list-inline-item">&copy;2008-2019</li>
+        <li class="list-inline-item">网站备案：京ICP备15049383号</li>
+        <li class="list-inline-item">联系电话：010-52400516</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script/jquery-3.2.1.slim.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/holder.min.js"></script>
+</body>
+
+</html>

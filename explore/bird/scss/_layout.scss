@@ -1,0 +1,46 @@
+//
+
+body {
+  overflow-x: hidden;
+}
+
+.footer {
+  font-size: 87.5%;
+}
+
+
+// linear-gradient
+.bg-cyan-linear {
+  background: url(../images/bg-brand.png) center no-repeat,
+              linear-gradient(90deg, #6bb7fc 0, #3f8ef8 100%);
+}
+
+// a small plane
+.paper-plane {
+  position: absolute;
+  z-index: 9;
+  @include center;
+  height: 6rem;
+  transform: translate(100%, -100%);
+}
+
+
+// icon size
+@each $size, $value in $icon-size {
+  .icon-s-#{$size} {
+    font-size: $value;
+  }
+  .icon-plate-#{$size} {
+    @include square($value);
+    line-height: $value;
+  }
+}
+
+.icon-plate {
+  position: relative;
+  text-align: center;
+  .icon {
+    position: absolute;
+    @include center;
+  }
+}

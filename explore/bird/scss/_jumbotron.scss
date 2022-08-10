@@ -1,0 +1,9 @@
+
+.jumbotron {
+  background-color: white;
+  border-radius: 0;
+  padding: 15rem 0 0;
+  &.jumbotron-download {
+    padding-top: 12rem;
+  }
+}

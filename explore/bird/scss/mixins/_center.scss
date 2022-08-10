@@ -1,0 +1,18 @@
+
+// Center
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Horizontal Center
+@mixin center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+// Vertical Center
+@mixin center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}

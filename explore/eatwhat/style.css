@@ -1,0 +1,61 @@
+:root {
+    --border-radius: 0.4rem;
+    --primary-color: OrangeRed;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: white;
+    background-image: url(foods.svg);
+    background-repeat: repeat;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.container {
+    position: relative;
+    z-index: 9;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+.food {
+    color: var(--primary-color);
+}
+
+.btn {
+    position: relative;
+    z-index: 99;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+}
+
+
+.temp {
+    position: absolute;
+    z-index: -1;
+    color: rgba(0, 0, 0, .125);
+}

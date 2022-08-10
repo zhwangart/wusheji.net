@@ -1,0 +1,14 @@
+
+
+//.headline {}
+//
+//.subtitle {}
+
+.project-title {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  .project-title-icon {
+    height: 24px;
+  }
+}

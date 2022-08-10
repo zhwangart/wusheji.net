@@ -1,0 +1,117 @@
+// apple product
+
+//
+// macbook air
+.macbook {
+  position: relative;
+  .macbook-screen{
+    position: relative;
+    background-color: transparent;
+    border-style: solid;
+    border-color: $color-macbook;
+    border-radius: 1rem;
+    border-width: 2rem 1.25rem 1.25rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .15), 0 0 .5rem rgba(0, 0, 0, .15) inset;
+  }
+  .macbook-keyboard{
+    position: relative;
+    background-color: $color-macbook;
+    border-bottom: solid 10px $color-macbook-darken;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin: -.5rem -5rem 0;
+    height: 1rem;
+    box-shadow: 0 .5rem 3rem rgba(0,0,0,.15);
+    &::before {
+      content: '';
+      position: absolute;
+      @include center-x;
+      background: linear-gradient(90deg, $color-macbook-darken, $color-macbook, $color-macbook-darken);
+      box-shadow: 0 0 .1rem rgba(0, 0, 0, .05) inset;
+      width: 20%;
+      height: .3rem;
+      border-radius: .125rem;
+    }
+  }
+}
+
+//
+// browser safari
+.browser {
+  position: relative;
+  background: $color-browser-light;
+  box-shadow: 0 -.5rem 1rem rgba(0,0,0,.05);
+  font-size: $browser-font-size;
+  .browser-header,
+  .browser-toolbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 .5rem;
+  }
+  .browser-toolbar {
+    justify-content: space-between;
+  }
+  .browser-body {
+    position: relative;
+    padding: 1rem;
+    article {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+//
+// browser-header 浏览器顶部按钮与标签
+.browser-header-btns,
+.browser-header-tabs {
+  @include list-inline;
+  display: flex;
+  flex-flow: row nowrap;
+  & + .browser-header-tabs {
+    margin-left: 1rem;
+  }
+}
+.browser-header-btns {
+  .browser-btn {
+    @include square($browser-btns-size);
+    margin: $browser-btns-size/4;
+  }
+  @each $color, $value in $color-browser-btns {
+    .browser-btn-#{$color} {
+      background-color: $value;
+    }
+  }
+}
+.browser-header-tabs {
+  .browser-tabs {
+    padding: .15rem .5rem;
+    &.active {
+      background-color: white;
+    }
+  }
+}
+
+
+//
+// browser-toolbar 浏览器工具条元素
+.browser-toolbar-search {
+  flex-grow: 1;
+  background-color: white;
+  height: 1.5rem;
+  &::before {
+    content: '\f14e';
+    font-family: feathericon;
+    opacity: .7;
+  }
+}
+.browser-toolbar-tools {
+  @include list-inline;
+  display: flex;
+  flex-flow: row nowrap;
+  .browser-tool {
+    padding: .5rem;
+    line-height: 1;
+  }
+}

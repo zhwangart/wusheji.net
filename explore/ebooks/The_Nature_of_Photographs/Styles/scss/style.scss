@@ -1,0 +1,175 @@
+@import "mixins";
+@import "minireset";
+@import "typography";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    padding: 1rem;
+    line-height: 1.5;
+    font-size: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+ul,ol,dl,p,figure {
+    margin-bottom: 1rem;
+}
+
+p {
+    text-indent: 2em;
+}
+
+@import "lists";
+
+.figure {
+    background-color: #f8f9fa;
+    .img-fluid {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .figcaption {
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        padding-left: 2rem;
+        font-size: 90%;
+        h5 {
+            position: relative;
+            &::before {
+                content: '';
+                display: inline-block;
+                @include square(1rem);
+                position: absolute;
+                left: -1.5rem;
+                top: 0;
+                opacity: .5;
+                background-size: cover;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMDAgMjAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNODYuOSAxMS41djI3LjRDNTguNiA0OSA0NC41IDY2IDQ0LjUgODkuOWMwIDQuMS4zIDguOC44IDE0LjNoNDAuNHY4NC41SDB2LTcyLjJDMCA1OC45IDI5IDI0IDg2LjkgMTEuNXptMTEyLjcgMHYyOC4yYy0yNy4yIDEzLjEtNDAuOCAyOS44LTQwLjggNTAuMiAwIDMgLjQgNy44IDEuMiAxNC4zaDQwdjg0LjVoLTg4LjJ2LTcyLjJjMC01Ny44IDI5LjMtOTIuOCA4Ny44LTEwNXoiLz48L3N2Zz4=);
+            }
+        }
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.fragment {
+    margin-bottom: 2rem;
+}
+
+.hr {
+    border-bottom: 1px solid #ddd;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 1rem;
+}
+
+@each $value in center right left {
+    .text-#{$value} {
+        text-align: $value;
+    }
+}
+
+.article {
+    padding-bottom: 5em;
+}
+
+.cover {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem 1rem;
+    border-radius: 1rem;
+    .cover-img {
+        border-radius: .5rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+.container,
+.nav {
+    transition: all .3s ease-in-out;
+}
+
+.nav {
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 5rem 1rem 1rem 1rem;
+    background-color: black;
+    width: 10rem;
+    transform: translateX(-10rem);
+    &, & a {
+        color: darkgray;
+        text-decoration: none;
+    }
+}
+
+.nav-toggle {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba($color: black, $alpha: .5);
+    border-radius: .5rem;
+    text-align: center;
+    cursor: pointer;
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-top: .4rem;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCI+PHBhdGggZD0iTTYzLjggMjEzLjJoODk2LjN2OTkuNkg2My44di05OS42bTAgMjQ5aDg5Ni4zdjk5LjZINjMuOHYtOTkuNm0wIDI0OWg4OTYuM3Y5OS42SDYzLjh2LTk5LjZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .cover {
+        padding: 2rem 0 1rem;
+        .cover-img {
+            border-radius: 0;
+        }
+    }
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .nav {
+        bottom: auto;
+        left: calc(50% + 400px);
+        top: 3rem;
+        width: auto;
+        font-size: small;
+        background-color: transparent;
+        transform: translateX(0);
+        &, & a {
+            color: gray;
+            text-decoration: none;
+        }
+        a:hover {
+            color: darkgray;
+        }
+    }
+    .nav-toggle {
+        display: none;
+    }
+}

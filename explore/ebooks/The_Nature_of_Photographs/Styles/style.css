@@ -1,0 +1,97 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+
+ul { list-style: none; }
+
+button, input, select { margin: 0; }
+
+html { box-sizing: border-box; }
+
+*, *::before, *::after { box-sizing: inherit; }
+
+img, video { height: auto; max-width: 100%; }
+
+iframe { border: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+td, th { padding: 0; }
+
+/* Typography */
+/* Headings */
+h1, h2, h3, h4, h5, h6 { color: inherit; font-weight: 500; line-height: 1.2; margin-bottom: 0.5em; margin-top: 0; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 { font-weight: 500; }
+
+h1, .h1 { font-size: 2rem; }
+
+h2, .h2 { font-size: 1.6rem; }
+
+h3, .h3 { font-size: 1.4rem; }
+
+h4, .h4 { font-size: 1.2rem; }
+
+h5, .h5 { font-size: 1rem; }
+
+h6, .h6 { font-size: 0.8rem; }
+
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small { font-size: 75%; font-weight: normal; }
+
+* { box-sizing: border-box; }
+
+html { font-size: 1rem; }
+
+body { position: relative; overflow-x: hidden; padding: 1rem; line-height: 1.5; font-size: 100%; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; -khtml-user-select: none; user-select: none; }
+
+ul, ol, dl, p, figure { margin-bottom: 1rem; }
+
+p { text-indent: 2em; }
+
+.list-unstyled, .list-inline { list-style: none; padding-left: 0; margin-left: 0; }
+
+.list-unstyled .list-unstyled { margin-bottom: auto; margin-left: 2em; }
+
+.list-inline { margin-right: -.5rem; margin-left: -.5rem; }
+.list-inline .list-inline-item { display: inline-block; padding-right: .5rem; padding-left: .5rem; }
+
+.figure { background-color: #f8f9fa; }
+.figure .img-fluid { display: block; width: 100%; margin-bottom: 1rem; }
+.figure .figcaption { padding-bottom: 1rem; padding-right: 1rem; padding-left: 2rem; font-size: 90%; }
+.figure .figcaption h5 { position: relative; }
+.figure .figcaption h5::before { content: ''; display: inline-block; width: 1rem; height: 1rem; position: absolute; left: -1.5rem; top: 0; opacity: .5; background-size: cover; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMDAgMjAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNODYuOSAxMS41djI3LjRDNTguNiA0OSA0NC41IDY2IDQ0LjUgODkuOWMwIDQuMS4zIDguOC44IDE0LjNoNDAuNHY4NC41SDB2LTcyLjJDMCA1OC45IDI5IDI0IDg2LjkgMTEuNXptMTEyLjcgMHYyOC4yYy0yNy4yIDEzLjEtNDAuOCAyOS44LTQwLjggNTAuMiAwIDMgLjQgNy44IDEuMiAxNC4zaDQwdjg0LjVoLTg4LjJ2LTcyLjJjMC01Ny44IDI5LjMtOTIuOCA4Ny44LTEwNXoiLz48L3N2Zz4=); }
+.figure .figcaption ul { margin-bottom: 0; }
+
+.fragment { margin-bottom: 2rem; }
+
+.hr { border-bottom: 1px solid #ddd; border-top: none; border-left: none; border-right: none; margin: 1rem; }
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+.text-left { text-align: left; }
+
+.article { padding-bottom: 5em; }
+
+.cover { background-color: #f8f9fa; padding: 2rem 1rem 1rem; border-radius: 1rem; }
+.cover .cover-img { border-radius: .5rem; width: 100%; margin: 1rem 0; }
+
+.container, .nav { transition: all .3s ease-in-out; }
+
+.nav { position: fixed; z-index: 9; left: 0; top: 0; height: 100%; padding: 5rem 1rem 1rem 1rem; background-color: black; width: 10rem; transform: translateX(-10rem); }
+.nav, .nav a { color: darkgray; text-decoration: none; }
+
+.nav-toggle { display: block; position: fixed; z-index: 99; top: 1rem; left: 1rem; width: 2rem; height: 2rem; background-color: rgba(0, 0, 0, 0.5); border-radius: .5rem; text-align: center; cursor: pointer; }
+.nav-toggle::before { content: ''; display: inline-block; height: 1.2rem; width: 1.2rem; margin-top: .4rem; background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCI+PHBhdGggZD0iTTYzLjggMjEzLjJoODk2LjN2OTkuNkg2My44di05OS42bTAgMjQ5aDg5Ni4zdjk5LjZINjMuOHYtOTkuNm0wIDI0OWg4OTYuM3Y5OS42SDYzLjh2LTk5LjZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+); background-size: cover; }
+
+@media (min-width: 768px) { .cover { padding: 2rem 0 1rem; }
+  .cover .cover-img { border-radius: 0; }
+  .container { max-width: 720px; margin: 0 auto; }
+  .nav { bottom: auto; left: calc(50% + 400px); top: 3rem; width: auto; font-size: small; background-color: transparent; transform: translateX(0); }
+  .nav, .nav a { color: gray; text-decoration: none; }
+  .nav a:hover { color: darkgray; }
+  .nav-toggle { display: none; } }
+
+/*# sourceMappingURL=style.css.map */

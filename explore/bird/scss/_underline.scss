@@ -1,0 +1,21 @@
+
+@each $color, $value in $theme-colors {
+  .underline-#{$color} {
+    &::after {
+      background-color: $value;
+    }
+  }
+}
+
+.underline-center {
+  @include underline-center(5rem);
+  &.subtitle {
+    &::after {
+      width: 3rem!important;
+    }
+  }
+}
+
+.underline-left {
+  @include underline-left(3rem);
+}

@@ -1,0 +1,24 @@
+.list-unstyled,
+.list-inline {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.list-unstyled {
+    .list-unstyled {
+        margin-bottom: auto;
+        margin-left: 2em;
+    }
+}
+
+.list-inline {
+    margin-right: -.5rem;
+    margin-left: -.5rem;
+    .list-inline-item {
+        display: inline-block;
+        padding-right: .5rem;
+        padding-left: .5rem;
+      }
+}
+  

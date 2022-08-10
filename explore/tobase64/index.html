@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="description" content="Base64编码转换工具，SVG、PNG、JPG、GIF图片转Base64编码，前端应用DataURI引入SVG格式矢量图片。"/>
+  <meta name="keywords" content="Base64编码转换,SVG转Base64,图片转Base64,DataURI"/>
+  <meta name="author" content="zhwangart"/>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="bookmark" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>To Base64</title>
+  <!--[if lt IE 9]>
+    <script>alert('您的浏览器版本过低，请更新本版本浏览器，或更换为诸如谷歌浏览器的现代浏览器')</script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="container">
+
+    <section class="to-bse64">
+      <div class="brand">
+        <h1>TO BASE64</h1>
+      </div>
+      <input class="nav-input" type="radio" name="to-base64" id="svg-to-base64" checked="checked">
+      <label class="nav-label" for="svg-to-base64">SVG 转 Base64</label>
+      <article class="article">
+        <div class="message warning">
+          建议先使用 <a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG</a> 对 SVG 文件进行一次压缩，复制其顶部 Tab 中
+          Markup 对应的代码至本页面，即可转化为 Base64 格式使用。
+        </div>
+        <div>
+          <form onsubmit="return false">
+            <textarea id="svg_input" class="textarea" rows="9" placeholder="在此输入或粘贴要转换的 SVG 代码"></textarea>
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <button class="button button-primary" type="submit" id="convert">
+                <img class="icon" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='5 3 19 12 5 21 5 3'></polygon></svg>">
+                开始转换
+              </button>
+              <div class="button-group">
+                <button class="button" type="reset">
+                  <img class="icon" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='3 6 5 6 21 6'></polyline><path d='M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'></path></svg>">
+                  清空
+                </button>
+                <button class="button button-primary" type="button" id="copy_svg2base64">
+                  <img class="icon" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='9' y='9' width='13' height='13' rx='2' ry='2'></rect><path d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'></path></svg>">
+                  拷贝
+                </button>
+              </div>
+            </div>
+            <textarea id="svg_output" class="textarea" rows="9" readonly placeholder="输出结果"></textarea>
+          </form>
+        </div>
+      </article>
+
+      <input class="nav-input" type="radio" name="to-base64" id="img-to-base64">
+      <label class="nav-label" for="img-to-base64">图片转 Base64</label>
+      <article class="article">
+        <div class="message warning">
+          当图片体积大于 10KB 不建议使用 Base64 格式。
+        </div>
+        <div>
+          <form onsubmit="return false">
+            <label class="file-label" for="file">
+              <input type="file" id="file">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='3' width='18' height='18' rx='2' ry='2'></rect><circle cx='8.5' cy='8.5' r='1.5'></circle><polyline points='21 15 16 10 5 21'></polyline></svg>" alt="">
+              <br>
+              <span>选择图片</span>
+            </label>
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <span>选择图片自动转换并输出结果。</span>
+              <div class="button-group">
+                <button class="button" type="reset">
+                  <img class="icon" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='3 6 5 6 21 6'></polyline><path d='M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'></path></svg>">
+                  清空
+                </button>
+                <button class="button button-primary" type="button" id="copy_img2base64">
+                  <img class="icon" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='9' y='9' width='13' height='13' rx='2' ry='2'></rect><path d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'></path></svg>">
+                  拷贝
+                </button>
+              </div>
+            </div>
+            <textarea id="img_output" class="textarea" rows="9" readonly placeholder="输出结果"></textarea>
+          </form>
+        </div>
+      </article>
+    </section>
+
+    <div>
+      <h3>DataURI</h3>
+      <p>Html</p>
+      <textarea class="textarea" rows="1" readonly><img src='data:image/svg+xml;utf8,<svg ... > ... </svg>'></textarea>
+      <p>CSS</p>
+      <textarea class="textarea" rows="1" readonly>.bg { background: url('data:image/svg+xml;utf8,<svg ...> ... </svg>');}</textarea>
+    </div>
+
+  </div>
+
+  <div id="temp"></div>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="list-inline">
+        <a class="list-inline-item" target="_blank" href="//acorn.imaging.xin/">Acorn</a>
+        <a class="list-inline-item" target="_blank" href="//imaging.xin">新橙象</a>
+        <a class="list-inline-item" target="_blank" href="//zhwangart.com">数学家</a>
+        <a class="list-inline-item" target="_blank" href="//github.com/zhwangart/hexo-theme-ocean">Ocean</a>
+        <a class="list-inline-item" target="_blank" href="//huangzhou.art">黄胄</a>
+        <a class="list-inline-item" target="_blank" href="//fm2.wiki">Nikon FM2</a>
+      </div>
+      <hr class="hr">
+      <div>&copy; 2021 zhwangart</div>
+    </div>
+  </footer>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script>
+  var $svg_input = document.querySelector('#svg_input');
+  var $convert = document.querySelector('#convert');
+  var $file = document.querySelector('#file');
+  var $temp = document.querySelector('#temp');
+  var $svg_output = document.querySelector('#svg_output');
+  var $img_output = document.querySelector('#img_output');
+  var $copy_svg2base64 = document.querySelector('#copy_svg2base64');
+  var $copy_img2base64 = document.querySelector('#copy_img2base64');
+
+  $convert.addEventListener('click', function () {
+    var val = $svg_input.value;
+    if (!val) return;
+    $svg_output.value = '转换中...';
+    $temp.innerHTML = val;
+    var svg = $temp.childNodes[0];
+    if (svg.constructor.toString().match(/SVGElement/)) {
+      var result = new XMLSerializer().serializeToString(svg);
+      result = window.btoa(result);
+      $svg_output.value = 'data:image/svg+xml;base64,' + result;
+    } else {
+      alert('您传入的 SVG 代码格式不标准，无法形成 DOM 元素！');
+    }
+    $temp.innerHTML = '';
+  });
+
+  $file.addEventListener('change', function (e) {
+    var files = e.target.files;
+    if (files.length < 1) return;
+    var file = files[0];
+    if (file.size / 1024 > 10) {
+      alert('您选择的图片体积大于 10KB，并不适合使用 Base64！'); return;
+    }
+    $img_output.value = '转换中...';
+    var reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = function () {
+      $img_output.value = reader.result;
+    }
+  });
+
+  $copy_svg2base64.addEventListener('click', function () {
+    var copyText = $svg_output; //获取对象
+        copyText .select(); //选择
+        document.execCommand("Copy"); //执行复制
+    $temp.innerHTML = '';
+  });
+  $copy_img2base64.addEventListener('click', function () {
+    var copyText = $img_output; //获取对象
+        copyText .select(); //选择
+        document.execCommand("Copy"); //执行复制
+    $temp.innerHTML = '';
+  });
+</script>
+
+</html>
