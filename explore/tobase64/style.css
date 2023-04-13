@@ -9,15 +9,15 @@
         url("//at.alicdn.com/t/webfont_f20wmllphjb.svg#NotoSansHans-DemiLight") format("svg");
 }
 :root {
-    --border-radius: 0.4rem;
-    --border-color: #ddd;
-    --primary-color: #5755d9;
+    --border-radius:        0.4rem;
+    --border-color:       #ddd;
+    --primary-color:      #5755d9;
     --primary-color-dark: #4240d4;
-    --success-color: #32b643;
-    --warning-color: #ffb700;
-    --error-color: #e85600;
-    --gray-color: #707070;
-    --light-color: #f8f9fa;
+    --success-color:      #32b643;
+    --warning-color:      #ffb700;
+    --error-color:        #e85600;
+    --gray-color:         #707070;
+    --light-color:        #f8f9fa;
 }
 * {
     box-sizing: border-box;
