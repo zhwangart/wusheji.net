@@ -7,43 +7,98 @@ body {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 section {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 50rem;
-  height: 100vh;
-  padding: 3rem;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1rem;
   margin: 0 auto;
 }
-header, figure {
+
+section > header {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  top: 3rem;
+  left: 3rem;
+  width: 4rem;
+}
+section > header img {
+  height: 5rem;
+}
+
+aside, figure {
   flex-grow: 1;
-  width: 50%;
+  width: 100%;
+}
+figure {
+  position: relative;
+}
+figure::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 figure img {
-  height: 100%;
+  height: auto;
+  width: 100%;
+  border-radius: 1rem;
 }
 
-header {
+aside {
   display: flex;
   align-items: end;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-header h1 {
+aside h1 {
   font-size: 4rem;
   line-height: 1;
   margin-bottom: 2rem;
 }
-header h1 > span {
+aside h1 > span {
   display: inline-block;
   height: 4rem;
   height: 4rem;
   background-image: url(matts.svg);
   background-size: cover;
 }
-header ruby {
+aside ruby {
   font-size: 2rem;
   font-weight: normal;
 }
-header ruby rt {
-  color: gray;
+aside ruby rt {
+  color: #7a3818;
+}
+
+@media (min-width:768px) {
+  section {
+    flex-direction: row;
+    width: 50rem;
+    height: 100vh;
+    padding: 3rem;
+    margin: 0 auto;
+  }
+  section > header {
+    display: block;
+  }
+  aside, figure {
+    flex-grow: 1;
+    width: 50%;
+  }
+  aside {
+    justify-content: start;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  figure img {
+    height: 100%;
+    width: auto;
+    border-radius: 1rem;
+  }
 }
