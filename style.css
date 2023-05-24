@@ -81,6 +81,7 @@ aside ruby rt {
     flex-direction: row;
     width: 50rem;
     height: 100vh;
+    max-height: 1080px;
     padding: 3rem;
     margin: 0 auto;
   }
