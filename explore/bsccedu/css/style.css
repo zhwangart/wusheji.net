@@ -884,6 +884,7 @@ hr, .hr {
       background-color: #F8F9FA; }
 
 .container {
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   max-width: 114rem; }
@@ -1488,19 +1489,29 @@ textarea.form-input {
   height: 60rem;
   overflow: hidden; }
 
-.swiper-imax-media {
+.swiper-imax-media,
+.swiper-imax-inner {
   position: absolute;
-  z-index: 0;
-  top: 0;
   right: 0;
-  bottom: 0;
   left: 0; }
 
+.swiper-imax-media {
+  z-index: 0;
+  top: 0;
+  bottom: 0; }
+
 .swiper-imax-inner {
-  position: relative;
   z-index: 1;
-  height: 100%;
-  background-color: rgba(41, 41, 41, 0.5); }
+  bottom: 0;
+  color: #FFFFFF;
+  background: linear-gradient(0, rgba(41, 41, 41, 0.75), transparent); }
+
+.swiper {
+  --swiper-theme-color: #AA1F24;
+  --swiper-navigation-color: rgba(0, 0, 0, .5);
+  --swiper-navigation-size: 3.2rem;
+  --swiper-pagination-color: #FFFFFF;
+  /* 两种都可以 */ }
 
 .news-grid {
   display: grid;
