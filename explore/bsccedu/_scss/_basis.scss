@@ -1,0 +1,33 @@
+//@at-root
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: $html-font-size;
+}
+body {
+	background-color: $color-bg-body;
+	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", Arial, sans-serif;
+	font-size: $base-font-size;
+	line-height: 1.5;
+	color: $color-body;
+}
+[v-cloak] {
+	display: none;
+}
+a {
+	transition: all .3s ease-in-out 0s;
+}
+img {
+	vertical-align: middle;
+}
+textarea {
+	resize: vertical;
+}
+figure {
+	padding: 0;
+	margin: 0;
+}

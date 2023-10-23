@@ -1,0 +1,17 @@
+//
+//
+.readmore {
+  position: relative;
+  color: $color-primary;
+  &::after {
+    content: '\e761';
+    font-family: 'iconfont';
+    padding-left: $spacer/2;
+  }
+}
+.readmore-vertical {
+  &::after {
+    content: '\e750';
+    padding-top: $spacer/2;
+  }
+}

@@ -1,0 +1,18 @@
+//
+//
+.avatar {
+  &:hover {
+    transform: rotate(5deg);
+  }
+}
+.avatar-group {
+	position: relative;
+	.avatar {
+		position: relative;
+		display: block;
+		float: left;
+		&:not(:first-child) {
+			margin-left: -$spacer/2;
+		}
+	}
+}

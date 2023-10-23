@@ -1,0 +1,41 @@
+//
+// gutter
+$gutter:  $spacer;
+// 
+.row {
+  position: relative;
+  margin-right: -$spacer/2;
+  margin-left: -$spacer/2;
+}
+
+.col {
+  padding-right: $spacer/2;
+  padding-left: $spacer/2;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 100% * ($i/12);
+  }
+}
+
+.lattice {
+  display: flex;
+  .cell {
+    background-color: $color-white;
+    border: solid $border-color $border-width;
+    border-right-width: $border-width/2;
+    border-left-width: $border-width/2;
+    &:first-child {
+      border-left-width: $border-width;
+    }
+    &:last-child {
+      border-right-width: $border-width;
+    }
+    &.cell-hover {
+      &:hover {
+        background-color: $color-light;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+//
+//
+.placard {
+  position: relative;
+  overflow: hidden;
+  background-color: $color-light;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  .placard-media,
+  .placard-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include transition();
+  }
+  .placard-media {
+    z-index: 0;
+    height: 100%;
+  }
+  .placard-inner {
+    background-color: rgba($color-dark, 0.5);
+    color: $color-white;
+  }
+  &:hover {
+    .placard-media {
+      transform: scale(1.1);
+    }
+  }
+}
