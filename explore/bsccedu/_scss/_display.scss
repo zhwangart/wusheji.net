@@ -1,7 +1,0 @@
-// display
-//
-@each $item in (inline, inline-block, block, grid, table, table-row, table-cell, flex, inline-flex, none) {
-	.d-#{$item} {
-		display: $item!important;
-	}
-}

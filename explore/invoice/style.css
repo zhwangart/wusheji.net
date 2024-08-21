@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.f-courier-new {
+  font-family: 'Courier New', Courier, monospace; }
+
+.f-s-12 {
+  font-size: 12pt; }
+
+.text-printed {
+  color: black; }
+
+.d-flex {
+  display: flex; }
+
+.invoice,
+.invoice * {
+  zoom: 1;
+  box-sizing: border-box; }
+
+.invoice {
+  width: 210mm;
+  min-height: 140mm;
+  padding: 4.5mm 4.5mm 7.5mm;
+  font-size: 9pt;
+  font-family: "Kaiti SC", "KaiTi", '楷体','楷体-简', serif;
+  color: #75140c; }
+  .invoice .invoice-header {
+    padding-bottom: 4mm;
+    display: flex;
+    justify-content: space-between; }
+  .invoice .invoice-body {
+    width: 201mm; }
+
+.invoice-header-quickmark {
+  width: 57mm;
+  padding: 1.5mm 2.5mm 0; }
+
+.invoice-header-quickmark .qr-code,
+.invoice-header-quickmark .mark {
+  height: 20mm; }
+
+.invoice-header-quickmark .qr-code {
+  position: relative;
+  width: 20mm;
+  border: solid 0.35mm #75140c; }
+
+.invoice-header-quickmark .qr-code::before {
+  content: '动态二维码';
+  position: absolute; }
+
+.invoice-header-quickmark .qr-code > img {
+  height: 100%;
+  width: 100%; }
+
+.invoice-header-quickmark .mark {
+  width: 28mm; }
+
+.invoice-header-title .title {
+  font-size: 20pt; }
+
+.bill {
+  position: relative;
+  border: solid 0.25mm #75140c; }
+  .bill::before, .bill::after {
+    content: '';
+    position: absolute;
+    right: -0.79mm;
+    bottom: 0;
+    width: 0.54mm; }
+  .bill::before {
+    top: 0;
+    background-color: #f6ede1; }
+  .bill::after {
+    top: 50%;
+    background-color: #765954; }
+  .bill .bill-header {
+    height: 22mm; }
+  .bill .bill-footer {
+    height: 16mm; }
+  .bill .bill-body {
+    position: relative;
+    min-height: 44mm; }
+  .bill .bill-total {
+    height: 8mm;
+    line-height: 8mm; }
+
+.bill-row {
+  display: flex; }
+  .bill-row:not(:last-child) {
+    border-bottom: solid 0.25mm #75140c; }
+
+.bill-col:not(:last-child) {
+  border-right: solid 0.25mm #75140c; }
+
+.bill-col-text-vertical {
+  width: 6mm;
+  line-height: 6mm;
+  text-align: center;
+  writing-mode: vertical-rl; }
+
+.item-table {
+  width: 100%;
+  border-collapse: collapse; }
+  .item-table th {
+    font-weight: normal; }
+
+.item-total {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

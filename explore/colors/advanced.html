@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Colors</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="app">
+		<section class="container">
+			<header>
+				<h1>Advanced color matching</h1>
+				<p>Hopefully these colors will give you some inspiration.</p>
+				<nav>
+					<a v-for="item in Navigation" :href="item.path">{{item.name}}</a>
+				</nav>
+			</header>
+			<div class="grid-3">
+        <div class="card card-advanced" v-for="items in AdvancedColor">
+					<div class="pill" v-for="colorItem in items.colors" :style="{backgroundColor: colorItem}">
+						<span>{{colorItem}}</span>
+					</div>
+					<div class="circle" v-for="linearItem in items.linear" :style="{background: 'linear-gradient(135deg,'+linearItem+')'}"></div>
+					<!-- <div class="card-column" v-for="column in items">
+						<div class="pill" v-for="colorItem in column.colors" :style="{backgroundColor: colorItem}">{{colorItem}}</div>
+						<div class="circle" v-for="linearItem in column.linear" :style="{background: 'linear-gradient(135deg,'+linearItem+')'}"></div>
+          </div> -->
+					<!--
+					<div class="card-column" v-for="column in item.linear">
+						<div class="circle" :style="{background: 'linear-gradient(135deg,'+column+')'}"></div>
+					</div>
+					-->
+				</div>
+			</div>
+			<footer>
+				<nav>
+					<a target="_blank" href="//coolors.co">Coolors</a>
+					<a target="_blank" href="//colorsafe.co">Color Safe</a>
+					<a target="_blank" href="//sarcadass.github.io/granim.js/">Granim.js</a>
+				</nav>
+				<p>&copy; 2022 <a href="//zhwangart.com">zhwangart</a></p>
+			</footer>
+		</section>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				// linear: {
+				// 	background: 'linear-gradient(135deg, #193441, #3E606F)'
+				// 	},
+				// linear: [
+				// 	// "linear-gradient(135deg, #193441, #3E606F)"
+				// 	"#193441, #3E606F"
+				// ],
+				Navigation: [],
+        AdvancedColor: []
+      },
+			created() {
+				fetch ('./data.json')
+				.then (Response => Response.json())
+				.then (json => {
+					this.Navigation = json.Navigation
+					this.AdvancedColor = json.AdvancedColor
+				})
+			},
+			methods: {
+				// copyColorHex(colorHex){
+				// 	var input = document.createElement("input");   // 直接构建input
+				// 	input.value = colorHex;  // 设置内容
+				// 	document.body.appendChild(input);    // 添加临时实例
+				// 	input.select();   // 选择实例内容
+				// 	document.execCommand("Copy");   // 执行复制
+				// 	document.body.removeChild(input); // 删除临时实例
+				// }
+			}
+		})
+	</script>
+</body>
+</html>

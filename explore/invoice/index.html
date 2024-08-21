@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>invoice</title>
+</head>
+<body>
+  <div id="app">
+    <div class="invoice">
+      <div class="invoice-header">
+        <div class="invoice-header-quickmark">
+          <div class="qr-code"></div>
+          <div class="mark">
+            <span>成品油</span>
+          </div>
+        </div>
+        <div class="invoice-header-title">
+          <div class="title">电子发票(普通发票)</div>
+        </div>
+        <div class="invoice-header-number">
+          <div></div>
+          <table class="">
+            <tbody>
+              <tr>
+                <td style="width: 20mm;">发票号码:</td>
+                <td style="width: 35mm;">
+                  <span class="text-printed">24112000000077846496</span>
+                </td>
+              </tr>
+              <tr>
+                <td>开票日期:</td>
+                <td>
+                  <span class="text-printed">2024年05月17日</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="invoice-body">
+        <div class="bill">
+          <div class="bill-row bill-header">
+            <template v-for="item in BuyerSeller">
+              <div class="bill-col bill-col-text-vertical">{{item.title}}</div>
+              <div class="bill-col" style="width: 94.5mm;">
+                <div>
+                  <span>名称:</span>
+                  <span class="text-printed">{{item.name}}</span>
+                </div>
+                <div>
+                  <span>统一社会信用代码/纳税人识别号:</span>
+                  <span class="text-printed f-courier-new f-s-12">{{item.id}}</span>
+                </div>
+              </div>
+            </template>
+          </div>
+          <div class="bill-row bill-body">
+            <table class="item-table">
+              <thead>
+                <tr>
+                  <th v-for="item in ItemColumns" :align="item.align" :style="{ width: item.width + 'mm'}">
+                    <span>{{item.text}}</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td v-for="item in ItemData" :align="item.align">
+                    <span class="text-printed">{{item.text}}</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="item-total">
+              <div class="item-total-title">合计</div>
+            </div>
+          </div>
+          <div class="bill-row bill-total">
+            <div class="bill-col h-100">价税合计(大写)</div>
+          </div>
+          <div class="bill-row bill-footer">
+            <div class="bill-col h-100 bill-col-text-vertical">备注</div>
+            <div class="bill-col h-100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="invoice-footer">
+        <span>开票人</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+        BuyerSeller: [
+          {
+            title: '购买方信息',
+            name: '华清巨成（北京）科技有限公司',
+            id: '91110108600473127Y'
+          },
+          {
+            title: '销售方信息',
+            name: '北京市海环佳兴科技发展有限公司',
+            id: '91110108600473127Y'
+          }
+        ],
+				ItemColumns: [
+          {
+            width: 37,
+            align: 'center',
+            text: '项目名称'
+          },
+          {
+            width: 24,
+            align: 'left',
+            text: '规格型号'
+          },
+          {
+            width: 12,
+            align: 'center',
+            text: '单位'
+          },
+          {
+            width: 25,
+            align: 'right',
+            text: '数量'
+          },
+          {
+            width: 25,
+            align: 'right',
+            text: '单价'
+          },
+          {
+            width: 26,
+            align: 'right',
+            text: '金额'
+          },
+          {
+            width: 25,
+            align: 'center',
+            text: '税率/征收率'
+          },
+          {
+            width: 27,
+            align: 'right',
+            text: '税额'
+          }
+        ],
+        ItemData: [
+          {
+            align: 'left',
+            text: '*汽油*京标车用汽油 (VIB)'
+          },
+          {
+            align: 'left',
+            text: '95'
+          },
+          {
+            align: 'center',
+            text: '升'
+          },
+          {
+            align: 'right',
+            text: '113.45'
+          },
+          {
+            align: 'right',
+            text: '7.4511012219332'
+          },
+          {
+            align: 'right',
+            text: '845.33'
+          },
+          {
+            align: 'center',
+            text: '13%'
+          },
+          {
+            align: 'right',
+            text: '109.89'
+          }
+        ]
+			},
+			methods: {}
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  <title>零壹零画室</title>
+</head>
+<body>
+  <div id="app">
+		<section class="container">
+			<div class="sidebar">
+				<div class="brand">
+					<img class="logo" src="images/logo.png" alt="">
+				</div>
+				<ul class="menu">
+					<li v-for="item in MenuList" class="menu-item">
+						<a class="menu-item-link" href="#">{{item}}</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main">
+				<div class="banner">
+
+				</div>
+			</div>
+		</section>
+		<div class="footer"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				MenuList: ['首页','中心简介','教学内容','教学成果','网络教学','商业设计','合作伙伴','诚聘英才','在线留言']
+			},
+			methods: {}
+		})
+	</script>
+</body>
+</html>

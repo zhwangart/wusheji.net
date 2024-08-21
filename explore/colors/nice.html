@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Colors</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="app">
+		<!--
+		<div class="card">
+			<div class="card-column" v-for="color in colors" v-bind:data-text="color" v-bind:style="{ backgroundColor: color}"></div>
+		</div>
+		-->
+		<section class="container">
+			<header>
+				<h1>Nice colors</h1>
+				<p>Hopefully these colors will give you some inspiration.</p>
+				<nav>
+					<a v-for="item in Navigation" :href="item.path">{{item.name}}</a>
+				</nav>
+			</header>
+			<div class="grid-nice">
+				<div class="card card-flex card-nice" v-for="(card, color) in NiceColors">
+					<div class="card-column" v-for="color in card.colors" v-bind:data-text="color" v-bind:style="{ backgroundColor: color}" @click="copyColorHex(color)">
+						<div class="copy">Copied!</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<nav>
+					<a target="_blank" href="//coolors.co">Coolors</a>
+					<a target="_blank" href="//colorsafe.co">Color Safe</a>
+					<a target="_blank" href="//sarcadass.github.io/granim.js/">Granim.js</a>
+				</nav>
+				<p>&copy; 2022 <a href="//zhwangart.com">zhwangart</a></p>
+			</footer>
+		</section>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				Navigation: [],
+				NiceColors: []
+			},
+			created() {
+				fetch ('./data.json')
+				.then (Response => Response.json())
+				.then (json => {
+					this.Navigation = json.Navigation
+					this.NiceColors = json.NiceColors
+				})
+			},
+			methods: {
+				copyColorHex(colorHex){
+					var input = document.createElement("input");   // 直接构建input
+					input.value = colorHex;  // 设置内容
+					document.body.appendChild(input);    // 添加临时实例
+					input.select();   // 选择实例内容
+					document.execCommand("Copy");   // 执行复制
+					document.body.removeChild(input); // 删除临时实例
+				}
+			}
+		})
+	</script>
+</body>
+</html>

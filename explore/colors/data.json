@@ -1,31 +1,125 @@
 {
-    "cards": [
-        {"colors": [ "#3E503C", "#7F886A","#F3ECDB", "#FF6F3D" ]},
-        {"colors": [ "#FFA45B", "#FDD5C8","#FAF2E8", "#FA6095" ]},
-        {"colors": [ "#FF8195", "#FDD5C8","#FAF2E8", "#F9476C" ]},
-        {"colors": [ "#F375B5", "#F7F7EE","#FCD783", "#816AD6" ]},
-        {"colors": [ "#FD665C", "#F8E2CF","#FAF7F5", "#AAD1D9" ]},
-        {"colors": [ "#356D65", "#F1CBB5","#F7ECDF", "#FFFFFF" ]},
-        {"colors": [ "#FBE1D2", "#FBF1EC","#FFC12E", "#CC3699" ]},
-        {"colors": [ "#FF94AB", "#FAF6F5","#E2D7D5", "#CDC2BF" ]},
-        {"colors": [ "#8333E9", "#FF7FAE","#FFC6BF", "#F9F7F1" ]},
-        {"colors": [ "#0E3746", "#EAE8DC","#F4F2EC", "#BE2623" ]},
-        {"colors": [ "#F97350", "#FAD06C","#F7F2E5", "#B7AC9A" ]},
-        {"colors": [ "#485550", "#C0EB6A","#F4F6F0", "#FFFFFF" ]},
-        {"colors": [ "#361040", "#F7DCDC","#F9F7F0", "#F54DA3" ]},
-        {"colors": [ "#38D7E7", "#F9F7F1","#EE316B", "#842D72" ]},
-        {"colors": [ "#FFA883", "#FDE3C8","#FAF2E8", "#6FC7E1" ]},
-        {"colors": [ "#FF5B8C", "#FFCB59","#FAF2E8", "#4B2245" ]},
-        {"colors": [ "#534859", "#FBF0E8","#FBD0D0", "#F9688D" ]},
-        {"colors": [ "#F1A177", "#FADFD1","#F8F3F0", "#C1B9B9" ]},
-        {"colors": [ "#373234", "#E8DCCC","#F3ECE4", "#D84399" ]},
-        {"colors": [ "#F7444E", "#F7F8F3","#78BCC4", "#002C3E" ]},
-        {"colors": [ "#FF92A9", "#FED361","#F9ECE6", "#FFFFFF" ]},
-        {"colors": [ "#5C3F5A", "#FDD5C8","#FAF2E8", "#5EE1F1" ]},
-        {"colors": [ "#43E8E4", "#F9F7F0","#E9E7DD", "#F27777" ]},
-        {"colors": [ "#F69F98", "#FDD5C8","#FAF2E8", "#SEE1F1" ]},
-        {"colors": [ "#777D71", "#BBD388","#F7F6E7", "#DFDDCS" ]},
-        {"colors": [ "#F8B5C1", "#F8D0D2","#EFF2F8", "#2B92E4" ]},
-        {"colors": [ "#2D6097", "#A3CAEB","#FCFCFC", "#F7D7C8" ]}
-    ]
+  "Navigation": [
+    {
+      "path": "nice.html",
+      "name": "Nice colors"
+    },
+    {
+      "path": "contrast.html",
+      "name": "Contrast color"
+    },
+    {
+      "path": "advanced.html",
+      "name": "Advanced color matching"
+    },
+    {
+      "path": "//acorn.imaging.xin/",
+      "name": "Acorn"
+    },
+    {
+      "path": "//acorn.imaging.xin/docs/logo.html",
+      "name": "Design a logo?"
+    }
+  ],
+	"NiceColors": [
+		{"colors": [ "#3E503C", "#7F886A", "#F3ECDB", "#FF6F3D" ]},
+		{"colors": [ "#FFA45B", "#FDD5C8", "#FAF2E8", "#FA6095" ]},
+		{"colors": [ "#FF8195", "#FDD5C8", "#FAF2E8", "#F9476C" ]},
+		{"colors": [ "#F375B5", "#F7F7EE", "#FCD783", "#816AD6" ]},
+		{"colors": [ "#FD665C", "#F8E2CF", "#FAF7F5", "#AAD1D9" ]},
+		{"colors": [ "#356D65", "#F1CBB5", "#F7ECDF", "#FFFFFF" ]},
+		{"colors": [ "#FBE1D2", "#FBF1EC", "#FFC12E", "#CC3699" ]},
+		{"colors": [ "#FF94AB", "#FAF6F5", "#E2D7D5", "#CDC2BF" ]},
+		{"colors": [ "#8333E9", "#FF7FAE", "#FFC6BF", "#F9F7F1" ]},
+		{"colors": [ "#0E3746", "#EAE8DC", "#F4F2EC", "#BE2623" ]},
+		{"colors": [ "#F97350", "#FAD06C", "#F7F2E5", "#B7AC9A" ]},
+		{"colors": [ "#485550", "#C0EB6A", "#F4F6F0", "#FFFFFF" ]},
+		{"colors": [ "#361040", "#F7DCDC", "#F9F7F0", "#F54DA3" ]},
+		{"colors": [ "#38D7E7", "#F9F7F1", "#EE316B", "#842D72" ]},
+		{"colors": [ "#FFA883", "#FDE3C8", "#FAF2E8", "#6FC7E1" ]},
+		{"colors": [ "#FF5B8C", "#FFCB59", "#FAF2E8", "#4B2245" ]},
+		{"colors": [ "#534859", "#FBF0E8", "#FBD0D0", "#F9688D" ]},
+		{"colors": [ "#F1A177", "#FADFD1", "#F8F3F0", "#C1B9B9" ]},
+		{"colors": [ "#373234", "#E8DCCC", "#F3ECE4", "#D84399" ]},
+		{"colors": [ "#F7444E", "#F7F8F3", "#78BCC4", "#002C3E" ]},
+		{"colors": [ "#FF92A9", "#FED361", "#F9ECE6", "#FFFFFF" ]},
+		{"colors": [ "#5C3F5A", "#FDD5C8", "#FAF2E8", "#5EE1F1" ]},
+		{"colors": [ "#43E8E4", "#F9F7F0", "#E9E7DD", "#F27777" ]},
+		{"colors": [ "#F69F98", "#FDD5C8", "#FAF2E8", "#SEE1F1" ]},
+		{"colors": [ "#777D71", "#BBD388", "#F7F6E7", "#DFDDCS" ]},
+		{"colors": [ "#F8B5C1", "#F8D0D2", "#EFF2F8", "#2B92E4" ]},
+		{"colors": [ "#2D6097", "#A3CAEB", "#FCFCFC", "#F7D7C8" ]}
+	],
+  "ContrastColor": [
+    {
+      "primary":   { "Hex": "#022A99", "Name": "克莱因蓝" },
+      "secondary": { "Hex": "#FBCD08", "Name": "靓丽黄" }
+    },
+    {
+      "primary":   { "Hex": "#00324D", "Name": "普鲁斯蓝" },
+      "secondary": { "Hex": "#B89076", "Name": "睿智金" }
+    },
+    {
+      "primary":   { "Hex": "#0D7E9C", "Name": "孔雀蓝" },
+      "secondary": { "Hex": "#D5BA9F", "Name": "浅驼色" }
+    },
+    {
+      "primary":   { "Hex": "#FC8416", "Name": "爱马仕橙" },
+      "secondary": { "Hex": "#363636", "Name": "深灰色" }
+    },
+    {
+      "primary":   { "Hex": "#7FA91F", "Name": "牛油果绿" },
+      "secondary": { "Hex": "#A8ABB0", "Name": "浅灰色" }
+    },
+    {
+      "primary":   { "Hex": "#195A56", "Name": "深灰绿" },
+      "secondary": { "Hex": "#FD742D", "Name": "橘橙色" }
+    },
+    {
+      "primary":   { "Hex": "#9D73BD", "Name": "青紫" },
+      "secondary": { "Hex": "#7BA6D1", "Name": "飘蓝" }
+    },
+    {
+      "primary":   { "Hex": "#66D3C0", "Name": "蒂芙尼蓝" },
+      "secondary": { "Hex": "#FDDE83", "Name": "淡黄" }
+    },
+    {
+      "primary":   { "Hex": "#53589A", "Name": "长春花蓝" },
+      "secondary": { "Hex": "#E5EB15", "Name": "荧光黄" }
+    },
+    {
+      "primary":   { "Hex": "#7CA682", "Name": "萌萌绿" },
+      "secondary": { "Hex": "#D17E9C", "Name": "苍粉" }
+    },
+    {
+      "primary":   { "Hex": "#F28195", "Name": "真朱" },
+      "secondary": { "Hex": "#7F919F", "Name": "薄花" }
+    }
+  ],
+  "AdvancedColor": [
+    {
+      "colors": [ "#193441", "#3E606F", "#91AA9D", "#D1DBBD", "#FCFFF5" ],
+      "linear": [ "#193441, #3E606F", "#3E606F, #91AA9D", "#91AA9D, #D1DBBD", "#D1DBBD, #FCFFF5", "#FCFFF5, #193441" ]
+    },
+    {
+      "colors": [ "#EB7F00", "#F3FFE2", "#ACF0F2", "#1695A3", "#225378"],
+      "linear": [ "#EB7F00, #F3FFE2", "#F3FFE2, #ACF0F2", "#ACF0F2, #1695A3", "#1695A3, #225378", "#225378, #1695A3" ]
+    },
+    {
+      "colors": ["#2C3E50", "#E74C3C", "#ECF0F1", "#3498DB", "#2980B9"],
+      "linear": ["#2C3E50, #E74C3C", "#E74C3C, #ECF0F1", "#ECF0F1, #3498DB", "#3498DB, #2980B9", "#2980B9, #3498DB" ]
+    },
+    {
+      "colors": [ "#8E2800", "#B64926", "#FFB03B", "#FFF0A5", "#468966" ],
+      "linear": [ "#8E2800, #B64926", "#B64926, #FFB03B", "#FFB03B, #FFF0A5", "#FFF0A5, #468966", "#468966, #FFF0A5" ]
+    },
+    {
+      "colors": [ "#002F2F", "#046380", "#EFECCA", "#A7A37E", "#E6E2AF" ],
+      "linear": [ "#002F2F, #046380", "#046380, #EFECCA", "#EFECCA, #A7A37E", "#A7A37E, #E6E2AF", "#E6E2AF, #A7A37E" ]
+    },
+    {
+      "colors": [ "#FF6138", "#FFFF9D", "#BEEB9F", "#79BD8F", "#00A388" ],
+      "linear": [ "#FF6138, #FFFF9D", "#FFFF9D, #BEEB9F", "#BEEB9F, #79BD8F", "#79BD8F, #00A388", "#00A388, #79BD8F" ]
+    }
+  ]
 }
