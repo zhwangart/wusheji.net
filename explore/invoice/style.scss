@@ -16,13 +16,9 @@ $border-witch:  0.25mm;
   color: black;
 }
 
-.d-flex {
-  display: flex;
-}
 
 .invoice,
 .invoice * {
-  zoom: 1;
   box-sizing: border-box;
 }
 
@@ -126,8 +122,9 @@ $border-witch:  0.25mm;
 }
 
 .item-table {
-  width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
   th {
     font-weight: normal;
   }

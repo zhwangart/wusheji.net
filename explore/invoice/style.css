@@ -8,12 +8,8 @@
 .text-printed {
   color: black; }
 
-.d-flex {
-  display: flex; }
-
 .invoice,
 .invoice * {
-  zoom: 1;
   box-sizing: border-box; }
 
 .invoice {
@@ -98,8 +94,9 @@
   writing-mode: vertical-rl; }
 
 .item-table {
-  width: 100%;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
   .item-table th {
     font-weight: normal; }
 
