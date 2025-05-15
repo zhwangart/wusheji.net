@@ -1,0 +1,81 @@
+@import "variables";
+@mixin transition {
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+@import "iconfont";
+@import "phone";
+.header {
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    left: 0;
+    // background-color: $light-color;
+    padding: 1rem 0;
+    @include transition;
+    &.bg-white {
+        padding: 0;
+    }
+}
+
+.navbar-brand {
+    position: relative;
+    padding-left: 3rem;
+    color: $deer-color;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        width: 4rem;
+        height: 4rem;
+        background-image: url(../images/deer.svg);
+        background-size: cover;
+    }
+}
+
+@keyframes linear-slidein {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+$circle-size: 45rem;
+.jumbotron {
+    .jumbotron-body {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            top: -4rem + -$circle-size / 2;
+            right: -2rem;
+            height: $circle-size;
+            width: $circle-size;
+            border-radius: $circle-size / 2;
+            background: linear-gradient(145deg, #f86f64, #fd5392);
+            animation-duration: 3s;
+            animation-name: linear-slidein;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+.section {
+    padding: 5rem 0;
+    .section-heading {
+        margin-bottom: 5rem;
+    }
+}
+
+.footer {
+    padding: 5rem 0 1rem;
+    font-size: .875rem!important;
+}

@@ -1,0 +1,13 @@
+.btn {
+    text-align: center;
+    background-color: $primary;
+    color: white;
+    padding: .75rem 1rem;
+    border: none;
+    outline: none;
+    &.btn-black {
+        display: block;
+        width: 100%;
+        font-size: large;
+    }
+}

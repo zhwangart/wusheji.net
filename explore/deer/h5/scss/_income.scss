@@ -1,0 +1,88 @@
+.deer-level {
+  position        : relative;
+  background-color: white;
+  line-height     : 1.15;
+  margin-bottom   : .5rem;
+}
+
+.deer-level-item {
+  border-bottom: solid 1px $gray-200;
+  position     : relative;
+  padding      : 1rem;
+  padding-left : 72px;
+
+  &::before {
+    content: attr(data-level);
+    display: inline-block;
+    @include circle(36px);
+    line-height: 36px;
+    font-size  : 20px;
+    text-align : center;
+    color      : white;
+    position   : absolute;
+    top        : 20px;
+    left       : 1rem;
+  }
+
+  &:nth-child(1) {
+    &::before {
+      background-color: $gray-600;
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      background-color: $green;
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      background-color: $blue;
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      background-color: $violet;
+    }
+  }
+
+  &:nth-child(5) {
+    &::before {
+      background-color: $red;
+    }
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: .5rem 0;
+    color : $gray-500;
+  }
+
+  .list-inline {
+    color: $gray-600;
+  }
+
+  .deer-level-item-option {
+    position       : relative;
+    display        : block;
+    border-top     : solid 1px $gray-200;
+    padding-top    : 1rem;
+    margin-top     : 1rem;
+    margin-right   : -1rem;
+    text-decoration: none;
+    color          : $dark;
+
+    &::after {
+      content    : '\e670';
+      font-family: 'iconfont';
+      position   : absolute;
+      @include center-y;
+      right: 1rem;
+      color: $gray-500;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.list {
+  @include list-unstyled;
+}
+
+.list-inline {
+  @include list-unstyled;
+  position: relative;
+  margin  : 0 -.5rem;
+
+  .list-inline-item {
+    display: inline-block;
+    padding: 0 .5rem;
+  }
+}

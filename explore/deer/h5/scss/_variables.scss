@@ -1,0 +1,58 @@
+// Core colors
+$deer-color      : #2e87e6 !default;
+$deer-color-dark : darken($deer-color, 9%) !default;
+$deer-color-light: lighten($deer-color, 9%) !default;
+
+$white   : #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black   : #000 !default;
+
+$blue   : #2e87e6;
+$green  : #8bc98a;
+$violet : #8776de;
+$red    : #ec655a;
+$yellow : #ffd24d;
+$bgcolor:#efeff4;
+
+$primary  : $blue !default;
+$secondary: $gray-600 !default;
+$success  : $green !default;
+$info     : $violet !default;
+$warning  : $yellow !default;
+$danger   : $red !default;
+$light    : $gray-100 !default;
+$dark     : $gray-800 !default;
+
+
+$theme-colors: (("primary": $primary,
+                "secondary": $secondary,
+                "success": $success,
+                "info": $info,
+                "warning": $warning,
+                "danger": $danger,
+                "light": $light,
+                "dark": $dark));
+
+
+$badge-brand-color: (vivo: #415fff,
+        oppo: #05B570,
+        xiaomi: #ff6700,
+        meizu: #00c3f5,
+        huawei: #cb242b,
+        lenovo: #e12726,
+        samsung: #172e9d,
+        le: #2f84c5,
+        thz360: #23ac38,
+        smartisan: #d4091d);
+
+ 
+$border-radius: .25rem !default;
+$rounded-pill : 50rem !default;       

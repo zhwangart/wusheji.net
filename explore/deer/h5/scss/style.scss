@@ -1,0 +1,116 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "iconfont";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  overflow-x           : hidden;
+  line-height          : 1.5;
+  font-size            : 87.5%;
+  // -webkit-touch-callout: none;
+  // -webkit-user-select  : none;
+  // -khtml-user-select   : none;
+  // -moz-user-select     : none;
+  // -ms-user-select      : none;
+  // user-select          : none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0 0 .5rem;
+}
+
+p {
+  margin: 0 0 .25rem;
+}
+
+hr {
+  margin          : 1rem 0;
+  border          : none;
+  height          : 1px;
+  background-color: $gray-200;
+}
+
+.bg-light {
+  background-color: $bgcolor;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+@each $color,
+$value in $theme-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+@each $color,
+$value in $theme-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+
+  a.text-#{$color} {
+    color: $value;
+  }
+}
+
+@each $align in (center, right, left) {
+  .text-#{$align} {
+    text-align: $align;
+  }
+}
+
+@each $weight in (bold, normal, lighter) {
+  .font-w-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+@import "rounded";
+@import "grid";
+@import "list";
+@import "card";
+@import "table";
+@import "media";
+@import "banner";
+@import "income";
+@import "help";
+@import "post";
+@import "btns";
+@import "badge";

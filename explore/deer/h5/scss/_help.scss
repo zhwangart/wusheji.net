@@ -1,0 +1,96 @@
+.outer {
+    padding: .5rem 0 0;
+}
+
+.list-help-center {
+    background-color: white;
+    margin-bottom   : .5rem;
+
+    >li {
+        position: relative;
+
+        >a {
+            position       : relative;
+            display        : block;
+            width          : 100%;
+            padding        : .75rem 0 .75rem 3rem;
+            overflow       : hidden;
+            white-space    : nowrap;
+            text-overflow  : ellipsis;
+            color          : $dark;
+            text-decoration: none;
+
+            >.iconfont {
+                position: absolute;
+                @include center-y;
+                left: 1rem;
+            }
+
+            &::after {
+                content : '\e670';
+                position: absolute;
+                @include center-y;
+                font-family: 'iconfont';
+                right      : 1rem;
+                color      : $gray-400;
+            }
+        }
+
+        &:not(:first-child) {
+            &::after {
+                content         : '';
+                position        : absolute;
+                top             : 0;
+                right           : 0;
+                left            : 3rem;
+                height          : 1px;
+                background-color: $gray-200;
+            }
+        }
+    }
+
+    &.about {
+        >li {
+            &:not(:first-child) {
+                &::after {
+                    left: 4rem;
+                }
+            }
+
+            >a {
+                padding-left: 4rem;
+            }
+        }
+    }
+
+    &.no-icon {
+        >li {
+            >a {
+                padding-left: 1rem;
+            }
+
+            &::after {
+                left: 0;
+            }
+        }
+    }
+}
+
+.list-phone-model {
+    li {
+        padding: .5rem 0;
+    }
+}
+
+.path-group {
+    >.path-group-item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            &::after {
+                content: ' -';
+                color  : #868e96;
+            }
+        }
+    }
+}

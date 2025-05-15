@@ -1,0 +1,30 @@
+.post {
+    padding: 0;
+
+    .post-header {
+        padding      : 1rem;
+        border-bottom: solid 1px $gray-200;
+        .post-title {
+            margin       : 0;
+        }
+    }
+
+    .post-body {
+        padding: 1rem;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.product {
+    .product-header {
+        margin-bottom: 1rem;
+    }
+    .product-body {
+        margin-bottom: 1rem;
+    }
+    .product-footer {
+        padding: 1rem 0;
+    }
+}

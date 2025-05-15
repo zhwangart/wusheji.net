@@ -1,0 +1,28 @@
+.banner-invite {
+    position       : relative;
+    background     : url(images/background-invite.png) no-repeat top;
+    background-size: 100%;
+    padding-top    : 20%;
+    text-align     : center;
+
+    img {
+        width: 55%;
+    }
+}
+
+.banner-income {
+    position       : relative;
+    text-align     : center;
+    background     : url(images/background-income.png) no-repeat center;
+    background-size: 100%;
+    padding        : 1rem;
+    margin-bottom  : .5rem;
+    color          : white;
+}
+
+.banner-vip {
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}

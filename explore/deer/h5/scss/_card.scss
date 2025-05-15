@@ -1,0 +1,14 @@
+.card {
+    position: relative;
+    background-color: white;
+    .card-header,
+    .card-body {
+        padding: 1rem;
+    }
+    .card-header {
+        border-bottom: solid 1px $gray-200;
+    }
+    .card-body {
+        position: relative;
+    }
+}

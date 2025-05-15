@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1679095 */
+  src: url("//at.alicdn.com/t/font_1679095_xzri8k1y7y.eot");
+  src: url("//at.alicdn.com/t/font_1679095_xzri8k1y7y.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1679095_xzri8k1y7y.woff2") format("woff2"), url("//at.alicdn.com/t/font_1679095_xzri8k1y7y.woff") format("woff"), url("//at.alicdn.com/t/font_1679095_xzri8k1y7y.ttf") format("truetype"), url("//at.alicdn.com/t/font_1679095_xzri8k1y7y.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 1.2rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .iconfont.icon-lg {
+    font-size: 1.5rem; }
+
+.phone {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 90px 0 rgba(0, 0, 0, 0.125), inset 0 0 7px rgba(0, 0, 0, 0.125);
+  padding: 7px; }
+  .phone .display {
+    position: relative;
+    width: 225px;
+    height: 487px;
+    border-radius: 23px; }
+    .phone .display .app-ui {
+      border-radius: 23px;
+      z-index: 0;
+      width: 100%; }
+    .phone .display .app-components {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      left: 0; }
+      .phone .display .app-components.app-nav {
+        bottom: 0;
+        border-bottom-right-radius: 23px;
+        border-bottom-left-radius: 23px; }
+    .phone .display .ui-shadow {
+      box-shadow: 0 15px 60px 0 rgba(253, 86, 143, 0.125);
+      border-radius: 7px; }
+
+.header {
+  position: fixed;
+  z-index: 9;
+  right: 0;
+  left: 0;
+  padding: 1rem 0;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s; }
+  .header.bg-white {
+    padding: 0; }
+
+.navbar-brand {
+  position: relative;
+  padding-left: 3rem;
+  color: #fd568f; }
+  .navbar-brand::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../images/deer.svg);
+    background-size: cover; }
+
+@keyframes linear-slidein {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(180deg); } }
+.jumbotron .jumbotron-body {
+  position: relative; }
+  .jumbotron .jumbotron-body::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: -26.5rem;
+    right: -2rem;
+    height: 45rem;
+    width: 45rem;
+    border-radius: 22.5rem;
+    background: linear-gradient(145deg, #f86f64, #fd5392);
+    animation-duration: 3s;
+    animation-name: linear-slidein;
+    animation-iteration-count: infinite; }
+
+.section {
+  padding: 5rem 0; }
+  .section .section-heading {
+    margin-bottom: 5rem; }
+
+.footer {
+  padding: 5rem 0 1rem;
+  font-size: 0.875rem !important; }
+
+/*# sourceMappingURL=deer.css.map */

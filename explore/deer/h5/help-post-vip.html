@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VIP 特权</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+    <div class="post" id="app">
+        <div class="banner-vip">
+            <img src="images/banner-vip.png" alt="">
+        </div>
+        <!-- <div class="post-header">
+        <h1 class="post-title">VIP 特权</h1>
+        <p class="text-secondary">微小鹿 VIP 只能使用铃铛兑换，不能使用现金或者积分等形式兑换。</p>
+        </div> -->
+        <div class="post-body">
+            <div class="media mb-1">
+                <i class="iconfont icon-xxlg text-primary">&#xe77d;</i>
+                <div class="media-body">
+                    <h3 class="mb-0">消费 5 折优惠</h3>
+                    <p class="text-secondary">享全场消费 5 折优惠，包括铃铛消费与积分消费。</p>
+                </div>
+            </div>
+            <div class="media mb-1">
+                <i class="iconfont icon-xxlg text-danger">&#xe78c;</i>
+                <div class="media-body">
+                    <h3 class="mb-0">赠送积分</h3>
+                    <p class="text-secondary">开通 VIP 即可获赠 100 积分，积分可用于发布名片与产品秀以及手动刷新，还可以在积分商城兑换礼品！</p>
+                </div>
+            </div>
+            <div class="media mb-1">
+                <i class="iconfont icon-xxlg text-info">&#xe797;</i>
+                <div class="media-body">
+                    <h3 class="mb-0">排名靠前</h3>
+                    <p class="text-secondary">VIP 用户发布的名片与产品秀，会比普通用户靠前展示（置顶、刷新除外），大大增加被浏览几率！</p>
+                </div>
+            </div>
+            <div class="media mb-1">
+                <i class="iconfont icon-xxlg text-success">&#xe718;</i>
+                <div class="media-body">
+                    <h3 class="mb-0">全功能使用</h3>
+                    <p class="text-secondary">VIP 特有功能：无打扰清理僵尸粉、发布名片数量无上限。</p>
+                </div>
+            </div>
+            <div class="media mb-1">
+                <i class="iconfont icon-xxlg text-danger">&#xe78f;</i>
+                <div class="media-body">
+                    <h3 class="mb-0">尊贵身份标识</h3>
+                    <p class="text-secondary">至尊红名，VIP 图标标识！</p>
+                </div>
+            </div>
+            <div class="media mb-1">
+                <i class="iconfont icon-xxlg text-warning">&#xe78a;</i>
+                <div class="media-body">
+                    <h3 class="mb-0">发布更多产品</h3>
+                    <p class="text-secondary">产品秀发布数：10次/天，每次3积分。</p>
+                </div>
+            </div>
+            <div class="media mb-1">
+                <i class="iconfont icon-xxlg text-info">&#xe78e;</i>
+                <div class="media-body">
+                    <h3 class="mb-0">专属客服</h3>
+                    <p class="text-secondary">专属优先客服！</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-black rounded-pill" id="button1">马上开通 VIP</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type='text/javascript'>
+
+
+    $(function () {
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+        if (isAndroid) {
+            $('#button1').click(() => window.little_deer.openMember());
+        }
+        if (isiOS) {
+
+            $("#button1").click(() => {
+
+                function setupWebViewJavascriptBridge(callback) {
+                    if (window.WebViewJavascriptBridge) {
+                        return callback(WebViewJavascriptBridge);
+                    }
+                    if (window.WVJBCallbacks) {
+                        return window.WVJBCallbacks.push(callback);
+                    }
+                    window.WVJBCallbacks = [callback];
+                    var WVJBIframe = document.createElement('iframe');
+                    WVJBIframe.style.display = 'none';
+                    WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+                    document.documentElement.appendChild(WVJBIframe);
+                    setTimeout(function () {
+                        document.documentElement.removeChild(WVJBIframe)
+                    }, 0)
+                }
+
+                // 这里主要是注册 OC 将要调用的 JS 方法。
+                setupWebViewJavascriptBridge(function (bridge) {
+
+                    // js调用ObjC注册的方法
+                    bridge.callHandler('IOSOpenMember', null, function responseCallback(responseData) {
+                        // responseData ObjC返回的数据
+
+                    })
+
+                });
+
+            });
+        }
+    });
+</script>

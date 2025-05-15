@@ -1,0 +1,36 @@
+$phone-color-white: white;
+$phone-color-black: black;
+$phone-radius: 30px;
+$phone-border: 7px;
+.phone {
+    background-color: $phone-color-white;
+    border-radius: $phone-radius;
+    box-shadow: 0 10px 90px 0 rgba($color: black, $alpha: 0.125), inset 0 0 7px rgba($color: black, $alpha: 0.125);
+    padding: $phone-border;
+    .display {
+        position: relative;
+        width: 225px;
+        height: 487px;
+        border-radius: $phone-radius - $phone-border;
+        .app-ui {
+            border-radius: $phone-radius - $phone-border;
+            z-index: 0;
+            width: 100%;
+        }
+        .app-components {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            left: 0;
+            &.app-nav {
+                bottom: 0;
+                border-bottom-right-radius: $phone-radius - $phone-border;
+                border-bottom-left-radius: $phone-radius - $phone-border;
+            }
+        }
+        .ui-shadow {
+            box-shadow: 0 15px 60px 0 rgba($color: $deer-color, $alpha: 0.125);
+            border-radius: $phone-border;
+        }
+    }
+}
